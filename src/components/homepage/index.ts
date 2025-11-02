@@ -1,0 +1,9 @@
+export { HeroSection } from "./hero-section";
+export { FeaturedListings } from "./featured-listings";
+export { MarketInsights } from "./market-insights";
+export { InvestmentOpportunities } from "./investment-opportunities";
+export { VirtualTours } from "./virtual-tours";
+export { LifestyleShowcase } from "./lifestyle-showcase";
+export { TestimonialSection } from "./testimonial-section";
+export { VIPServices } from "./vip-services";
+export { AgentSpotlight } from "./agent-spotlight";
