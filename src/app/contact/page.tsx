@@ -1,9 +1,13 @@
+import { ContactHeroSection, DirectContactCard, OfficeShowcaseSection, ResponseTimeSection } from '@/components/contact';
 import React from 'react';
 
 const ContactPage = () => {
     return (
         <main>
-            contaact page
+            <ContactHeroSection />
+            <DirectContactCard />
+            <ResponseTimeSection />
+            <OfficeShowcaseSection />
         </main>
     );
 };
