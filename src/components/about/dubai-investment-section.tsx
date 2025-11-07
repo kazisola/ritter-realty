@@ -85,14 +85,14 @@ export function DubaiInvestmentSection() {
 
         {/* Video callout */}
         <div className="mt-16 bg-linear-to-r from-teal-700/10 to-secondary/10 rounded-2xl p-12 border border-teal-700/20">
-          <div className="flex items-center justify-between">
-            <div>
+          <div className="flex items-center justify-between max-sm:flex-col max-sm:gap-6">
+            <div className="max-sm:text-center">
               <h3 className="text-2xl font-serif font-bold text-foreground mb-2">Watch the Journey</h3>
               <p className="text-gray-600">
                 See these premium Dubai projects come to life. &quot;Experience the journey from a dream to reality.&quot;
               </p>
             </div>
-            <button className="px-8 py-4 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-700/90 transition-all duration-300 shrink-0">
+            <button className="px-8 py-4 max-sm:w-full bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-700/90 transition-all duration-300 shrink-0">
               Watch Video
             </button>
           </div>

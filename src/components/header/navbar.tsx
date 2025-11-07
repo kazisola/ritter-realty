@@ -50,7 +50,7 @@ const Navbar = () => {
                     </div>
                     <ul className='flex flex-col items-start gap-4 mt-6 border-t pt-6'>
                         {navs.map((nav, index) => (
-                            <li key={index} className='font-semibold'>
+                            <li key={index} onClick={() => setShowResponsiveNav(false)} className='font-semibold'>
                                 {nav.link ?
                                     <Link href={`${nav.link}`}>{nav.name}</Link>
                                     :
