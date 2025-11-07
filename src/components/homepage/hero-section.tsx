@@ -63,7 +63,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <div className="space-y-6">
+            <div className="space-y-6 max-sm:text-center">
               <p className="mb-5 text-sm font-semibold uppercase tracking-widest text-[#dbb45c]">
                 Welcome to Ritter Realty
               </p>
