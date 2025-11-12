@@ -3,13 +3,19 @@ import React from 'react';
 interface ListingHeaderProps {
     title: string;
     desc: string;
+    background: string
 }
 
-const ListingHeader = ({ title, desc }: ListingHeaderProps) => {
+const ListingHeader = ({ title, desc, background }: ListingHeaderProps) => {
     return (
-        <div className='flex flex-col justify-center items-center h-48 w-full bg-[#dbb45c15]'>
-            <h2 className='font-extrabold text-4xl mb-3'>{title}</h2>
-            <p className='capitalize font-light text-base text-gray-500'>{desc}</p>
+        <div className='flex flex-col justify-center items-center pt-36 pb-56 w-full bg-[#dbb45c15] bg-no-repeat bg-center bg-cover object-cover relative'
+            style={{ backgroundImage: `url(${background})` }}
+        >
+            <div className='absolute inset-0 bg-black/40'></div>
+            <div className='relative text-center'>
+                <h2 className='font-extrabold text-5xl mb-3 text-white'>{title}</h2>
+                <p className='capitalize font-extralight text-lg text-slate-300'>{desc}</p>
+            </div>
         </div>
     );
 };
