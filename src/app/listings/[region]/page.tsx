@@ -1,6 +1,6 @@
-import FilterProperties from '@/components/listing/FilterProperties/FilterProperties';
-import ListingHeader from '@/components/listing/ListingHeader/ListingHeader';
-import Properties from '@/components/listing/Properties/Properties';
+import FilterProperties from '@/components/listings/FilterProperties/FilterProperties';
+import ListingHeader from '@/components/listings/ListingHeader/ListingHeader';
+import Properties from '@/components/listings/Properties/Properties';
 import React from 'react';
 
 interface RegionPageProps {

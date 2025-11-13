@@ -1,4 +1,4 @@
-import PropertyDetails from '@/components/listing/Properties/PropertyDetails';
+import PropertyDetails from '@/components/listings/Properties/PropertyDetails';
 import React from 'react';
 
 interface PropertyDetailsPageProps {
