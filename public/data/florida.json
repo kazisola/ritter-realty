@@ -1,0 +1,199 @@
+[
+    {
+        "id": 1,
+        "slug": "luxury-gulf-view-estate",
+        "title": "Luxury Gulf-View Estate",
+        "location": "Naples, Florida",
+        "type": "Residential",
+        "price": "$4,800,000",
+        "beds": 5,
+        "baths": 5,
+        "sqft": "8,500",
+        "lot_size": "1.2 acres",
+        "year_built": 2019,
+        "status": "For Sale",
+        "parking": "3-car garage",
+        "description": "An exquisite Gulf-view estate offering breathtaking sunsets, open-concept living, and seamless indoor-outdoor flow. Enjoy private beach access, infinity-edge pool, and custom finishes throughout this architectural masterpiece.",
+        "amenities": [
+            "Infinity pool",
+            "Private beach access",
+            "Wine cellar",
+            "Home theater",
+            "Smart home automation",
+            "Outdoor kitchen"
+        ],
+        "images": [
+            "/images/florida/naples-estate-1.jpg",
+            "/images/florida/naples-estate-2.jpg",
+            "/images/florida/naples-estate-3.jpg"
+        ],
+        "agent": {
+            "name": "Sophia Martinez",
+            "phone": "+1 (239) 555-2847",
+            "email": "sophia.martinez@flrealty.com"
+        }
+    },
+    {
+        "id": 2,
+        "slug": "modern-waterfront-villa",
+        "title": "Modern Waterfront Villa",
+        "location": "Sarasota, Florida",
+        "type": "Residential",
+        "price": "$3,200,000",
+        "beds": 4,
+        "baths": 4,
+        "sqft": "6,200",
+        "lot_size": "0.9 acres",
+        "year_built": 2021,
+        "status": "For Sale",
+        "parking": "2-car garage",
+        "description": "A sleek, modern waterfront villa designed for luxury living. Featuring floor-to-ceiling windows, expansive terraces, and panoramic water views from every room.",
+        "amenities": [
+            "Private dock",
+            "Infinity-edge pool",
+            "Chef’s kitchen",
+            "Spa-inspired master bath",
+            "Home gym"
+        ],
+        "images": [
+            "/images/florida/sarasota-villa-1.jpg",
+            "/images/florida/sarasota-villa-2.jpg",
+            "/images/florida/sarasota-villa-3.jpg"
+        ],
+        "agent": {
+            "name": "Michael Torres",
+            "phone": "+1 (941) 555-9138",
+            "email": "michael.torres@flrealty.com"
+        }
+    },
+    {
+        "id": 3,
+        "slug": "beachfront-penthouse",
+        "title": "Beachfront Penthouse",
+        "location": "Clearwater, Florida",
+        "type": "Residential",
+        "price": "$2,900,000",
+        "beds": 3,
+        "baths": 3,
+        "sqft": "5,100",
+        "lot_size": "N/A",
+        "year_built": 2018,
+        "status": "For Sale",
+        "parking": "2 reserved spaces",
+        "description": "An elegant beachfront penthouse offering uninterrupted views of the Gulf of Mexico, high-end interiors, and private elevator access to your residence in the sky.",
+        "amenities": [
+            "Private elevator",
+            "Ocean-view terrace",
+            "Rooftop pool",
+            "Concierge service",
+            "Fitness center"
+        ],
+        "images": [
+            "/images/florida/clearwater-penthouse-1.jpg",
+            "/images/florida/clearwater-penthouse-2.jpg",
+            "/images/florida/clearwater-penthouse-3.jpg"
+        ],
+        "agent": {
+            "name": "Emma Brooks",
+            "phone": "+1 (727) 555-4021",
+            "email": "emma.brooks@flrealty.com"
+        }
+    },
+    {
+        "id": 4,
+        "slug": "premium-commercial-plaza",
+        "title": "Premium Commercial Plaza",
+        "location": "Tampa, Florida",
+        "type": "Commercial",
+        "price": "$8,500,000",
+        "beds": 0,
+        "baths": 0,
+        "sqft": "25,000",
+        "lot_size": "2.5 acres",
+        "year_built": 2015,
+        "status": "For Sale",
+        "parking": "50+ spaces",
+        "description": "A high-visibility commercial plaza in Tampa’s prime retail corridor. Ideal for mixed-use businesses with multiple retail units and ample parking.",
+        "amenities": [
+            "High foot traffic area",
+            "Ample parking",
+            "Signage visibility",
+            "Energy-efficient design"
+        ],
+        "images": [
+            "/images/florida/tampa-plaza-1.jpg",
+            "/images/florida/tampa-plaza-2.jpg",
+            "/images/florida/tampa-plaza-3.jpg"
+        ],
+        "agent": {
+            "name": "Daniel Reed",
+            "phone": "+1 (813) 555-2904",
+            "email": "daniel.reed@flrealty.com"
+        }
+    },
+    {
+        "id": 5,
+        "slug": "office-tower-downtown",
+        "title": "Office Tower Downtown",
+        "location": "Miami, Florida",
+        "type": "Commercial",
+        "price": "$12,000,000",
+        "beds": 0,
+        "baths": 0,
+        "sqft": "40,000",
+        "lot_size": "0.8 acres",
+        "year_built": 2017,
+        "status": "For Sale",
+        "parking": "Underground garage (100 spaces)",
+        "description": "A modern high-rise office tower in the heart of downtown Miami. Perfect for corporate headquarters or multi-tenant investment opportunities.",
+        "amenities": [
+            "24/7 security",
+            "Lobby concierge",
+            "High-speed elevators",
+            "Conference facilities",
+            "Rooftop terrace"
+        ],
+        "images": [
+            "/images/florida/miami-tower-1.jpg",
+            "/images/florida/miami-tower-2.jpg",
+            "/images/florida/miami-tower-3.jpg"
+        ],
+        "agent": {
+            "name": "Ava Johnson",
+            "phone": "+1 (305) 555-7129",
+            "email": "ava.johnson@flrealty.com"
+        }
+    },
+    {
+        "id": 6,
+        "slug": "retail-strip-center",
+        "title": "Retail Strip Center",
+        "location": "Ft. Myers, Florida",
+        "type": "Commercial",
+        "price": "$5,500,000",
+        "beds": 0,
+        "baths": 0,
+        "sqft": "18,000",
+        "lot_size": "1.5 acres",
+        "year_built": 2016,
+        "status": "For Sale",
+        "parking": "40+ spaces",
+        "description": "A modern retail strip center located in a high-growth corridor of Ft. Myers. Features multiple retail tenants and high return potential for investors.",
+        "amenities": [
+            "High-traffic location",
+            "Long-term tenants",
+            "Modern construction",
+            "Signage exposure"
+        ],
+        "images": [
+            "/images/florida/ftmyers-strip-1.jpg",
+            "/images/florida/ftmyers-strip-2.jpg",
+            "/images/florida/ftmyers-strip-3.jpg"
+        ],
+        "agent": {
+            "name": "Noah Carter",
+            "phone": "+1 (239) 555-1386",
+            "email": "noah.carter@flrealty.com"
+        }
+    }
+]

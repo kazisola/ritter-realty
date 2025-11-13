@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "slug": "palm-jumeirah-waterfront-villa",
+    "title": "Palm Jumeirah Waterfront Villa",
+    "location": "Palm Jumeirah, Dubai",
+    "type": "Residential",
+    "price": "$9,800,000",
+    "beds": 6,
+    "baths": 7,
+    "sqft": "12,400",
+    "lot_size": "0.7 acres",
+    "year_built": 2020,
+    "status": "For Sale",
+    "parking": "4-car garage",
+    "description": "An opulent villa on Palm Jumeirah with private beach access, infinity pool, and panoramic views of the Dubai skyline. Designed with Italian marble, smart home systems, and floor-to-ceiling glass walls.",
+    "amenities": [
+      "Private beach",
+      "Infinity pool",
+      "Home cinema",
+      "Gym and sauna",
+      "Maid’s quarters",
+      "Smart home automation"
+    ],
+    "images": [
+      "/images/dubai/palm-villa-1.jpg",
+      "/images/dubai/palm-villa-2.jpg",
+      "/images/dubai/palm-villa-3.jpg"
+    ],
+    "agent": {
+      "name": "Omar Al Mansoori",
+      "phone": "+971 50 345 2291",
+      "email": "omar.mansoori@dxbrealty.com"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "downtown-dubai-penthouse",
+    "title": "Downtown Dubai Penthouse",
+    "location": "Downtown Dubai, UAE",
+    "type": "Residential",
+    "price": "$7,500,000",
+    "beds": 5,
+    "baths": 6,
+    "sqft": "9,800",
+    "lot_size": "N/A",
+    "year_built": 2019,
+    "status": "For Sale",
+    "parking": "3 reserved spaces",
+    "description": "A luxurious penthouse overlooking Burj Khalifa and the Dubai Fountain. Fully furnished with European design elements, a rooftop jacuzzi, and a private sky lounge.",
+    "amenities": [
+      "Rooftop jacuzzi",
+      "Private sky lounge",
+      "Concierge services",
+      "24/7 security",
+      "Smart lighting system"
+    ],
+    "images": [
+      "/images/dubai/downtown-penthouse-1.jpg",
+      "/images/dubai/downtown-penthouse-2.jpg",
+      "/images/dubai/downtown-penthouse-3.jpg"
+    ],
+    "agent": {
+      "name": "Layla Hassan",
+      "phone": "+971 52 778 9083",
+      "email": "layla.hassan@dxbrealty.com"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "dubai-marina-luxury-apartment",
+    "title": "Dubai Marina Luxury Apartment",
+    "location": "Dubai Marina, Dubai",
+    "type": "Residential",
+    "price": "$2,300,000",
+    "beds": 3,
+    "baths": 4,
+    "sqft": "3,200",
+    "lot_size": "N/A",
+    "year_built": 2022,
+    "status": "For Sale",
+    "parking": "2 reserved spaces",
+    "description": "A high-rise luxury apartment in the heart of Dubai Marina with waterfront views, balcony access, and a modern open floor plan.",
+    "amenities": [
+      "Marina view balcony",
+      "Shared infinity pool",
+      "Fitness center",
+      "Children’s play area",
+      "Concierge service"
+    ],
+    "images": [
+      "/images/dubai/marina-apartment-1.jpg",
+      "/images/dubai/marina-apartment-2.jpg",
+      "/images/dubai/marina-apartment-3.jpg"
+    ],
+    "agent": {
+      "name": "Rashid Khalaf",
+      "phone": "+971 56 443 8210",
+      "email": "rashid.khalaf@dxbrealty.com"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "business-bay-office-tower",
+    "title": "Business Bay Office Tower",
+    "location": "Business Bay, Dubai",
+    "type": "Commercial",
+    "price": "$15,000,000",
+    "beds": 0,
+    "baths": 0,
+    "sqft": "55,000",
+    "lot_size": "0.9 acres",
+    "year_built": 2018,
+    "status": "For Sale",
+    "parking": "100+ spaces",
+    "description": "A prestigious commercial tower in Business Bay with Grade A office spaces, panoramic views of Downtown Dubai, and modern energy-efficient infrastructure.",
+    "amenities": [
+      "24/7 security",
+      "Valet parking",
+      "Conference rooms",
+      "Pantry and dining area",
+      "LEED-certified building"
+    ],
+    "images": [
+      "/images/dubai/business-bay-1.jpg",
+      "/images/dubai/business-bay-2.jpg",
+      "/images/dubai/business-bay-3.jpg"
+    ],
+    "agent": {
+      "name": "Nadia Rahman",
+      "phone": "+971 55 321 5467",
+      "email": "nadia.rahman@dxbrealty.com"
+    }
+  }
+]

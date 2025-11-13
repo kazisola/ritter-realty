@@ -1,0 +1,133 @@
+[
+  {
+    "id": 1,
+    "slug": "riyadh-luxury-villa",
+    "title": "Riyadh Luxury Villa",
+    "location": "Al Nakheel, Riyadh",
+    "type": "Residential",
+    "price": "$4,500,000",
+    "beds": 5,
+    "baths": 6,
+    "sqft": "10,200",
+    "lot_size": "1 acre",
+    "year_built": 2021,
+    "status": "For Sale",
+    "parking": "3-car garage",
+    "description": "A magnificent villa in Al Nakheel, featuring Arabian-inspired architecture, expansive courtyards, and a private swimming pool. Perfect blend of modern design and traditional elegance.",
+    "amenities": [
+      "Private pool",
+      "Guest house",
+      "Landscaped garden",
+      "Maid’s quarters",
+      "Smart security system"
+    ],
+    "images": [
+      "/images/saudi/riyadh-villa-1.jpg",
+      "/images/saudi/riyadh-villa-2.jpg",
+      "/images/saudi/riyadh-villa-3.jpg"
+    ],
+    "agent": {
+      "name": "Faisal Al-Harbi",
+      "phone": "+966 55 678 9032",
+      "email": "faisal.harbi@ksaestates.com"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "jeddah-seaside-villa",
+    "title": "Jeddah Seaside Villa",
+    "location": "Obhur, Jeddah",
+    "type": "Residential",
+    "price": "$3,800,000",
+    "beds": 4,
+    "baths": 5,
+    "sqft": "7,900",
+    "lot_size": "0.6 acres",
+    "year_built": 2020,
+    "status": "For Sale",
+    "parking": "2-car garage",
+    "description": "An elegant seaside villa in Jeddah’s Obhur area, offering private beach access and panoramic Red Sea views. Perfect for families seeking privacy and luxury.",
+    "amenities": [
+      "Private beach access",
+      "Infinity pool",
+      "Home theater",
+      "Smart home system",
+      "Rooftop terrace"
+    ],
+    "images": [
+      "/images/saudi/jeddah-villa-1.jpg",
+      "/images/saudi/jeddah-villa-2.jpg",
+      "/images/saudi/jeddah-villa-3.jpg"
+    ],
+    "agent": {
+      "name": "Sara Al-Mutairi",
+      "phone": "+966 54 211 7345",
+      "email": "sara.mutairi@ksaestates.com"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "riyadh-financial-district-tower",
+    "title": "Riyadh Financial District Tower",
+    "location": "King Abdullah Financial District, Riyadh",
+    "type": "Commercial",
+    "price": "$22,000,000",
+    "beds": 0,
+    "baths": 0,
+    "sqft": "80,000",
+    "lot_size": "1.5 acres",
+    "year_built": 2017,
+    "status": "For Sale",
+    "parking": "150+ spaces",
+    "description": "A world-class commercial tower in Riyadh’s Financial District offering premium office spaces with advanced security, smart energy systems, and luxurious interiors.",
+    "amenities": [
+      "24/7 security",
+      "Conference floors",
+      "High-speed elevators",
+      "Cafeteria",
+      "Underground parking"
+    ],
+    "images": [
+      "/images/saudi/financial-tower-1.jpg",
+      "/images/saudi/financial-tower-2.jpg",
+      "/images/saudi/financial-tower-3.jpg"
+    ],
+    "agent": {
+      "name": "Abdullah Al-Qahtani",
+      "phone": "+966 50 445 2189",
+      "email": "abdullah.qahtani@ksaestates.com"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "jeddah-mall-complex",
+    "title": "Jeddah Mall Complex",
+    "location": "Prince Sultan Road, Jeddah",
+    "type": "Commercial",
+    "price": "$14,500,000",
+    "beds": 0,
+    "baths": 0,
+    "sqft": "65,000",
+    "lot_size": "2.3 acres",
+    "year_built": 2016,
+    "status": "For Sale",
+    "parking": "200+ spaces",
+    "description": "A fully operational mall complex in Jeddah’s busiest retail district. Ideal for high-end retail brands and long-term investors.",
+    "amenities": [
+      "Food court",
+      "Cinema complex",
+      "Underground parking",
+      "Security and maintenance services"
+    ],
+    "images": [
+      "/images/saudi/jeddah-mall-1.jpg",
+      "/images/saudi/jeddah-mall-2.jpg",
+      "/images/saudi/jeddah-mall-3.jpg"
+    ],
+    "agent": {
+      "name": "Lina Al-Shehri",
+      "phone": "+966 53 998 2045",
+      "email": "lina.shehri@ksaestates.com"
+    }
+  }
+]

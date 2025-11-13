@@ -11,9 +11,9 @@ const Navbar = () => {
         {
             name: "Listings",
             sub_menu: [
-                { icon: <Building size={22} />, title: "Florida", desc: "100 properties", link: "/florida" },
-                { icon: <Building size={22} />, title: "Dubai", desc: "200 properties", link: "/dubai" },
-                { icon: <Building size={22} />, title: "Saudi Arabia", desc: "150 properties", link: "/saudi-arabia" },
+                { icon: <Building size={22} />, title: "Florida", desc: "100 properties", link: "/listings/florida" },
+                { icon: <Building size={22} />, title: "Dubai", desc: "200 properties", link: "/listings/dubai" },
+                { icon: <Building size={22} />, title: "Saudi Arabia", desc: "150 properties", link: "/listings/saudi-arabia" },
             ],
         },
         { name: "About", link: "/about" },

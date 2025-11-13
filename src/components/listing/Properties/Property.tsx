@@ -8,6 +8,7 @@ import React from 'react';
 interface PropertyProps {
     property: {
         id: number;
+        slug: string;
         title: string;
         location: string;
         type: string;
@@ -15,7 +16,18 @@ interface PropertyProps {
         beds: number;
         baths: number;
         sqft: string;
-        images: string[]
+        images: string[];
+        lot_size: string;
+        year_built: number;
+        status: string;
+        parking: string;
+        description: string;
+        amenities: string[];
+        agent: {
+            name: string;
+            phone: string;
+            email: string;
+        }
     }
 }
 
@@ -34,7 +46,7 @@ const Property = ({ property }: PropertyProps) => {
 
             <div className="relative overflow-hidden h-64 bg-secondary/20">
                 <Image
-                    src={property.images[0] || "/images/beachfront-luxury-villa-sunset.jpg"}
+                    src={"/images/beachfront-luxury-villa-sunset.jpg"}
                     alt={property.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     width={200}
