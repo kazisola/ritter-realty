@@ -1,22 +1,25 @@
-import { Quote, QuoteIcon, Star, TextQuote } from "lucide-react"
+import { Quote, QuoteIcon, Star, StarOff, StarsIcon, TextQuote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Marcus Johnson",
-    title: "Real Estate Investor",
-    content: "Ritter Royalty made my commercial property search seamless. Exceptional expertise and service.",
+    name: "David & Sharon Eisfelder",
+    title: "Home Buyers",
+    content:
+      "We found that your integrity and honesty are beyond reproach. You always kept your word. It was reassuring to know we could trust you completely.",
     rating: 5,
   },
   {
-    name: "Catherine Williams",
-    title: "International Client",
-    content: "Their international listings opened doors to opportunities I never knew existed. Highly recommended.",
+    name: "Tannie & Tim Girard",
+    title: "Sellers & Buyers",
+    content:
+      "He truly cares about people and has very high ethics. We feel fortunate to have had his expertise in real estate and would send family and friends to Loyal with complete confidence.",
     rating: 5,
   },
   {
-    name: "David Martinez",
-    title: "First-Time Buyer",
-    content: "Professional, patient, and knowledgeable. They found my dream home in Florida.",
+    name: "Laurie & Chris",
+    title: "Home Buyers",
+    content:
+      "Loyal respected that we weren’t quite ready but still took the time to guide us — and ultimately helped us find our dream home. If you want an honest, down-to-earth realtor, look no further.",
     rating: 5,
   },
 ]
