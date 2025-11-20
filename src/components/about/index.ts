@@ -4,3 +4,4 @@ export { ExpertiseSection } from "./expertise-section";
 export { DubaiInvestmentSection } from "./dubai-investment-section";
 export { PhilosophySection } from "./philosophy-section";
 export { CTASection } from "./cta-section";
+export { TeamSection } from "./team-section";

@@ -1,4 +1,4 @@
-import { CTASection, DubaiInvestmentSection, ExperienceTimeline, ExpertiseSection, LoyalHeroSection, PhilosophySection } from "@/components/about";
+import { CTASection, DubaiInvestmentSection, ExperienceTimeline, ExpertiseSection, LoyalHeroSection, PhilosophySection, TeamSection } from "@/components/about";
 
 
 const AboutPage = () => {
@@ -6,6 +6,7 @@ const AboutPage = () => {
         <main>
             <LoyalHeroSection />
             <ExperienceTimeline />
+            <TeamSection />
             <ExpertiseSection />
             <DubaiInvestmentSection />
             <PhilosophySection />
