@@ -29,7 +29,7 @@ export function AgentSpotlight() {
               </div>
               <h2 className="text-5xl font-serif font-bold text-foreground mb-4">Meet Loyal Ritter</h2>
               <p className="text-base text-gray-700 leading-relaxed">
-                Senior Broker Associate with 25+ years of experience in international real estate. Specializing in
+                A Broker with 25+ years of experience in international real estate. Specializing in
                 luxury properties and global investment opportunities.
               </p>
             </div>
@@ -46,14 +46,14 @@ export function AgentSpotlight() {
                 <Globe className="w-6 h-6 text-[#00786F] shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Global Expert</h3>
-                  <p className="text-gray-600 text-sm">Dubai, London, Paris, Tokyo and beyond</p>
+                  <p className="text-gray-600 text-sm">Dubai, Saudi Arabia and beyond</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Star className="w-6 h-6 text-[#00786F] shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Proven Results</h3>
-                  <p className="text-gray-600 text-sm">$500M+ in transactions | 100+ successful deals</p>
+                  <p className="text-gray-600 text-sm">$100M+ in transactions | 100+ successful deals</p>
                 </div>
               </div>
             </div>
