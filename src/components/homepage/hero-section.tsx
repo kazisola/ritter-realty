@@ -22,7 +22,7 @@ const images = [
 
 export function HeroSection() {
   const [index, setIndex] = useState(0)
-  const [count, setCount] = useState({ properties: 0, countries: 0, sqft: 0 })
+  const [count, setCount] = useState({ properties: 0, countries: 0, experiences_years: 0 })
 
   useEffect(() => {
     // Animate numbers
@@ -32,9 +32,9 @@ export function HeroSection() {
     const timer = setInterval(() => {
       start += increment
       setCount({
-        properties: Math.min(500, Math.floor((start / duration) * 500)),
-        countries: Math.min(15, Math.floor((start / duration) * 15)),
-        sqft: Math.min(2, Math.floor((start / duration) * 2)),
+        properties: Math.min(100, Math.floor((start / duration) * 100)),
+        countries: Math.min(5, Math.floor((start / duration) * 5)),
+        experiences_years: Math.min(25, Math.floor((start / duration) * 25)),
       })
       if (start >= duration) clearInterval(timer)
     }, 30)
@@ -111,15 +111,15 @@ export function HeroSection() {
               >
                 <div className="">
                   <div className="text-3xl font-serif font-bold text-[#00786F]">{count.properties}+</div>
-                  <div className="text-sm text-gray-600">Properties Listed</div>
+                  <div className="text-sm text-gray-600">Available Properties</div>
                 </div>
                 <div className="">
                   <div className="text-3xl font-serif font-bold text-[#00786F]">{count.countries}+</div>
                   <div className="text-sm text-gray-600">Countries</div>
                 </div>
                 <div className="">
-                  <div className="text-3xl font-serif font-bold text-[#00786F]">{count.sqft}M+</div>
-                  <div className="text-sm text-gray-600">Combined SqFt</div>
+                  <div className="text-3xl font-serif font-bold text-[#00786F]">{count.experiences_years}+</div>
+                  <div className="text-sm text-gray-600">Years of Experience</div>
                 </div>
               </motion.div>
             </div>
