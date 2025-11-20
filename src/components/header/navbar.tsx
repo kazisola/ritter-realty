@@ -1,5 +1,5 @@
 "use client";
-import { Building, ChevronDown, Menu, X } from "lucide-react";
+import { Building, ChevronDown, House, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -11,9 +11,10 @@ const Navbar = () => {
         {
             name: "Listings",
             sub_menu: [
-                { icon: <Building size={22} />, title: "Florida", desc: "100 properties", link: "/listings/florida" },
-                { icon: <Building size={22} />, title: "Dubai", desc: "200 properties", link: "/listings/dubai" },
-                { icon: <Building size={22} />, title: "Saudi Arabia", desc: "150 properties", link: "/listings/saudi-arabia" },
+                { icon: <House size={23} />, title: "Florida Residential", desc: "120 properties", link: "/listings/florida", type: "florida-residential" },
+                { icon: <Building size={23} />, title: "Florida Commercial", desc: "100 properties", link: "/listings/florida", type: "florida-commercial" },
+                { icon: <Building size={23} />, title: "Dubai", desc: "200 properties", link: "/listings/dubai" },
+                { icon: <Building size={23} />, title: "Saudi Arabia", desc: "150 properties", link: "/listings/saudi-arabia" },
             ],
         },
         { name: "About", link: "/about" },
@@ -44,7 +45,11 @@ const Navbar = () => {
                         onMouseLeave={() => setActiveDropdown(null)}
                     >
                         {nav.link ? (
-                            <Link href={nav.link}>{nav.name}</Link>
+                            <Link
+                                href={nav.link}
+                            >
+                                {nav.name}
+                            </Link>
                         ) : (
                             <button className="flex items-center gap-1 cursor-pointer">
                                 {nav.name} <ChevronDown size={16} />
@@ -53,11 +58,14 @@ const Navbar = () => {
 
                         {/* Dropdown Menu */}
                         {nav.sub_menu && activeDropdown === index && (
-                            <ul className="absolute top-full -left-56 bg-white rounded-xl shadow-lg p-3 grid grid-cols-3 gap-2 w-130">
+                            <ul className="absolute top-full left-0 bg-white rounded-xl shadow-lg p-3 flex flex-col gap-2 w-60">
                                 {nav.sub_menu.map((item, subIndex) => (
                                     <li key={subIndex}>
                                         <Link
-                                            href={item.link}
+                                            href={{
+                                                pathname: item.link,
+                                                query: { type: item.type }
+                                            }}
                                             className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-all"
                                         >
                                             <span className="text-[#dbb45c]">{item.icon}</span>

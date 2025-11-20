@@ -6,7 +6,8 @@ import { usePathname } from 'next/navigation';
 import { IProperty } from '@/types/property';
 
 interface PropertiesProps {
-    region: string
+    region: string;
+    type: string | undefined;
 }
 
 const Properties = ({ region }: PropertiesProps) => {

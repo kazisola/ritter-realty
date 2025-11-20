@@ -4,9 +4,12 @@ import Properties from '@/components/listings/Properties/Properties';
 import React from 'react';
 
 interface RegionPageProps {
-    params: Promise<{
-        region: string,
-    }>
+  params: Promise<{
+    region: string,
+  }>,
+  searchParams: Promise<{
+    type?: string;
+  }>
 }
 
 const regionMeta = {
@@ -27,16 +30,33 @@ const regionMeta = {
   },
 };
 
-const RegionPage = async ({ params }: RegionPageProps) => {
-    const { region } = await params;
-    const meta = regionMeta[region as keyof typeof regionMeta];
-    return (
-        <>
-            <ListingHeader title={meta.title} desc={meta.desc} background={meta.background} />
-            <FilterProperties />
-            <Properties region={region} />
-        </>
-    );
+const RegionPage = async ({ params, searchParams }: RegionPageProps) => {
+  const { region } = await params;
+  const { type } = await searchParams;
+  const baseMeta = regionMeta[region as keyof typeof regionMeta];
+  const meta =
+    region === "florida" && type === "florida-residential"
+      ? {
+        ...baseMeta,
+        title: "Florida Luxury Residential Homes",
+        desc: "Explore luxury residential homes, waterfront villas, and high-end estates across Florida.",
+        background: "/images/penthouse-gulf-view-luxury-florida.jpg",
+      }
+      : region === "florida" && type === "florida-commercial"
+        ? {
+          ...baseMeta,
+          title: "Florida Commercial Real Estate",
+          desc: "Browse premium commercial properties including office buildings, retail spaces, and investments across Florida.",
+          background: "/images/penthouse-gulf-view-luxury-florida.jpg",
+        }
+        : baseMeta;
+  return (
+    <>
+      <ListingHeader title={meta.title} desc={meta.desc} background={meta.background} />
+      {/* <FilterProperties /> */}
+      <Properties region={region} type={type} />
+    </>
+  );
 };
 
 export default RegionPage;
