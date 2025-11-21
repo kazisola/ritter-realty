@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronRight } from "lucide-react"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 const images = [
   {
@@ -21,6 +22,7 @@ const images = [
 ]
 
 export function HeroSection() {
+  const router = useRouter();
   const [index, setIndex] = useState(0)
   const [count, setCount] = useState({ properties: 0, countries: 0, experiences_years: 0 })
 
@@ -93,11 +95,11 @@ export function HeroSection() {
                 transition={{ delay: 0.7 }}
                 className="flex flex-col sm:flex-row gap-4 pt-4"
               >
-                <button className="px-8 py-3 bg-[#dbb45c] text-white rounded-full font-medium hover:bg-[#cdaa5a] transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg hover:scale-105 cursor-pointer">
+                <button onClick={() => router.push("/listings/dubai")} className="px-8 py-3 bg-[#dbb45c] text-white rounded-full font-medium hover:bg-[#cdaa5a] transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg hover:scale-105 cursor-pointer">
                   Explore Listings
                   <ChevronRight size={20} />
                 </button>
-                <button className="px-8 py-3 border border-[#dbb45c] text-[#dbb45c] rounded-full font-medium hover:bg-primary/5 transition-colors shadow-sm hover:shadow-md cursor-pointer">
+                <button onClick={() => router.push("/about")} className="px-8 py-3 border border-[#dbb45c] text-[#dbb45c] rounded-full font-medium hover:bg-primary/5 transition-colors shadow-sm hover:shadow-md cursor-pointer">
                   Learn More
                 </button>
               </motion.div>

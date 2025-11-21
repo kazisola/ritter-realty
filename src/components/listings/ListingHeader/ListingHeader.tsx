@@ -8,7 +8,7 @@ interface ListingHeaderProps {
 
 const ListingHeader = ({ title, desc, background }: ListingHeaderProps) => {
     return (
-        <div className='mb-20 flex flex-col justify-center items-center pt-36 pb-56 w-full bg-[#dbb45c15] bg-no-repeat bg-center bg-cover object-cover relative'
+        <div className=' flex flex-col justify-center items-center pt-36 pb-56 w-full bg-[#dbb45c15] bg-no-repeat bg-center bg-cover object-cover relative'
             style={{ backgroundImage: `url(${background})` }}
         >
             <div className='absolute inset-0 bg-black/40'></div>

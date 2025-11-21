@@ -1,3 +1,4 @@
+import ActivitiesEnjoy from '@/components/listings/ActivitiesEnjoy/ActivitiesEnjoy';
 import FilterProperties from '@/components/listings/FilterProperties/FilterProperties';
 import ListingHeader from '@/components/listings/ListingHeader/ListingHeader';
 import Properties from '@/components/listings/Properties/Properties';
@@ -54,6 +55,7 @@ const RegionPage = async ({ params, searchParams }: RegionPageProps) => {
     <>
       <ListingHeader title={meta.title} desc={meta.desc} background={meta.background} />
       {/* <FilterProperties /> */}
+      <ActivitiesEnjoy title={meta.title} region={region} />
       <Properties region={region} type={type} />
     </>
   );
