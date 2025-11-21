@@ -1,20 +1,20 @@
-// import PropertyDetails from '@/components/listings/Properties/PropertyDetails';
-// import React from 'react';
+import PropertyDetails from '@/components/listings/Properties/PropertyDetails';
+import React from 'react';
 
-// interface PropertyDetailsPageProps {
-//     params: Promise<
-//         {
-//             region: string;
-//             id: number;
-//         }
-//     >
-// }
+interface PropertyDetailsPageProps {
+    params: Promise<
+        {
+            region: string;
+            id: number;
+        }
+    >
+}
 
-// const PropertyDetailsPage = async ({ params }: PropertyDetailsPageProps) => {
-//     const { region, id } = await params;
-//     return (
-//         <PropertyDetails region={region} id={id} />
-//     );
-// };
+const PropertyDetailsPage = async ({ params }: PropertyDetailsPageProps) => {
+    const { region, id } = await params;
+    return (
+        <PropertyDetails region={region} id={id} />
+    );
+};
 
-// export default PropertyDetailsPage;
+export default PropertyDetailsPage;
