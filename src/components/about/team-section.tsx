@@ -30,12 +30,12 @@ export function TeamSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Loyal Ritter */}
           <div className="group relative bg-white rounded-2xl shadow-xl overflow-hidden border border-teal-700/10 hover:shadow-2xl transition duration-300">
-            <div className="relative h-72 w-full">
+            <div className="relative h-110 w-full">
               <Image
                 src="/images/loyal-headshot.jpg"
                 alt="Loyal Ritter - Broker"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
 
@@ -87,12 +87,12 @@ export function TeamSection() {
 
           {/* Michael Garvey */}
           <div className="group relative bg-white rounded-2xl shadow-xl overflow-hidden border border-teal-700/10 hover:shadow-2xl transition duration-300">
-            <div className="relative h-72 w-full">
+            <div className="relative h-110 w-full">
               <Image
-                src="/images/michale.jpeg" // <-- add your photo here
+                src="/images/michale.jpeg"
                 alt="Michael Garvey"
                 fill
-                className="object-cover"
+                className="object-cover object-left"
               />
             </div>
 
