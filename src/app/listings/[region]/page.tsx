@@ -48,7 +48,7 @@ const RegionPage = async ({ params, searchParams }: RegionPageProps) => {
           ...baseMeta,
           title: "Florida Commercial Real Estate",
           desc: "Browse premium commercial properties including office buildings, retail spaces, and investments across Florida.",
-          background: "/images/penthouse-gulf-view-luxury-florida.jpg",
+          background: "/images/luxury-real-estate-office-florida-interior-profess.jpg",
         }
         : baseMeta;
   return (

@@ -122,14 +122,16 @@ const Navbar = () => {
                                                 setActiveDropdown(activeDropdown === index ? null : index)
                                             }
                                         >
-                                            {nav.name} <ChevronDown size={18} />
+                                            {nav.name}
+                                            {activeDropdown === index ? <ChevronDown size={18} className="transform rotate-180" /> :
+                                                <ChevronDown size={18} />
+                                            }
                                         </button>
                                         {activeDropdown === index && (
                                             <ul className="grid grid-cols-1 gap-3 mt-2 pl-2 border-l border-gray-200">
                                                 {nav.sub_menu?.map((item, subIndex) => (
                                                     <li key={subIndex}>
                                                         <Link
-                                                            // href={item.link}
                                                             href={{
                                                                 pathname: item.link,
                                                                 query: { type: item.type }
