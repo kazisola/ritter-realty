@@ -1,0 +1,75 @@
+.loyalSwipper .swiper {
+  width: 640px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.loyalSwipper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  padding: 0 20px;
+}
+
+/* Media query for devices with width 1024px or less */
+@media screen and (max-width: 1024px) {
+  .loyalSwipper .swiper {
+    width: 100% !important;
+    height: 400px !important;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+}
+
+.loyalSwipper .swiper-slide:nth-child(1n) {
+  background-color: #b99549;
+  /* Darker gold */
+}
+
+.loyalSwipper .swiper-slide:nth-child(2n) {
+  background-color: #c5a14f;
+  /* Deep rich gold */
+}
+
+.loyalSwipper .swiper-slide:nth-child(3n) {
+  background-color: #d0ac55;
+  /* Classic gold */
+}
+
+.loyalSwipper .swiper-slide:nth-child(4n) {
+  background-color: #dbb45c;
+  /* Base gold */
+}
+
+.loyalSwipper .swiper-slide:nth-child(5n) {
+  background-color: #e1bd6a;
+  /* Soft gold */
+}
+
+.loyalSwipper .swiper-slide:nth-child(6n) {
+  background-color: #e7c67a;
+  /* Lighter gold */
+}
+
+.loyalSwipper .swiper-slide:nth-child(7n) {
+  background-color: #edd08a;
+  /* Pale gold */
+}
+
+.loyalSwipper .swiper-slide:nth-child(8n) {
+  background-color: #f2d89a;
+  /* Champagne gold */
+}
+
+.loyalSwipper .swiper-slide:nth-child(9n) {
+  background-color: #f6e3ad;
+  /* Soft pastel gold */
+}
+
+.loyalSwipper .swiper-slide:nth-child(10n) {
+  background-color: #f9ecc4;
+  /* Lightest gold */
+}
