@@ -57,7 +57,7 @@ export function VirtualTours() {
                 </div>
               </div>
 
-              <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <button className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-100 transition-opacity">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full p-6 group-hover:bg-primary/80 transition-colors">
                   <Play size={32} className="text-white fill-white" />
                 </div>
