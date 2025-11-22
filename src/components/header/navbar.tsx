@@ -85,7 +85,7 @@ const Navbar = () => {
             {/* Mobile Nav */}
             <button
                 onClick={() => setShowResponsiveNav(true)}
-                className="text-[#dbb45c] md:hidden"
+                className="text-[#dbb45c] md:hidden relative top-1"
             >
                 <Menu size={26} />
             </button>
@@ -129,7 +129,11 @@ const Navbar = () => {
                                                 {nav.sub_menu?.map((item, subIndex) => (
                                                     <li key={subIndex}>
                                                         <Link
-                                                            href={item.link}
+                                                            // href={item.link}
+                                                            href={{
+                                                                pathname: item.link,
+                                                                query: { type: item.type }
+                                                            }}
                                                             onClick={() => setShowResponsiveNav(false)}
                                                             className="flex items-center gap-3 py-2 text-sm text-gray-700 hover:text-[#946f19]"
                                                         >
