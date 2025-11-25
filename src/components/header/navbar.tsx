@@ -2,7 +2,7 @@
 import { Building, ChevronDown, House, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
     const [showResponsiveNav, setShowResponsiveNav] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
     const pathname = usePathname();
-
+    const router = useRouter();
     useEffect(() => {
         document.body.style.overflow = showResponsiveNav ? "hidden" : "auto";
         return () => {
@@ -154,7 +154,7 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <button className='mt-auto bg-[#dbb45c] text-white font-semibold text-base w-full h-12 rounded-full cursor-pointer'>Schedule Meet</button>
+                    <button onClick={() => router.push("/contact")} className='mt-auto bg-[#dbb45c] text-white font-semibold text-base w-full h-12 rounded-full cursor-pointer'>Schedule Meet</button>
                 </div>
             )}
         </nav>

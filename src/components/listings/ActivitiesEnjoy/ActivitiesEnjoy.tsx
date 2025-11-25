@@ -11,6 +11,8 @@ import {
     Sparkles,
     Trees,
     Palmtree,
+    WavesIcon,
+    Funnel,
 } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -88,58 +90,40 @@ const saudiFeatures = [
         desc: "UNESCO heritage district known for traditional architecture and souks."
     },
     {
-        icon: Waves,
-        label: "Jeddah Corniche",
-        image: "/images/saudi/corniche.jpg",
-        desc: "A scenic coastal stretch with beaches, walkways, and modern attractions."
-    },
-    {
-        icon: Sailboat,
-        label: "Obhur Marina",
-        image: "/images/saudi/obhur.jpg",
+        icon: WavesIcon,
+        label: "Scuba",
+        image: "/images/saudi/scuba.jpeg",
         desc: "A waterfront hub for boating, resorts, and family recreation."
-    },
-    {
-        icon: ShoppingBag,
-        label: "Red Sea Mall",
-        image: "/images/saudi/red-sea-mall.jpg",
-        desc: "One of Jeddah’s largest malls featuring fashion, dining, and leisure."
-    },
-    {
-        icon: Utensils,
-        label: "Boulevard Dining",
-        image: "/images/saudi/boulevard.jpg",
-        desc: "A modern dining district with high-end restaurants and cafés."
     },
     {
         icon: Trees,
         label: "Jeddah Waterfront Parks",
-        image: "/images/saudi/waterfront-park.jpg",
+        image: "/images/saudi/jeddah-waterfront.jpg",
         desc: "Beautiful public parks with sea views, gardens, and open spaces."
     },
     {
         icon: Building2,
-        label: "King Abdullah Economic City",
-        image: "/images/saudi/kaec.jpg",
-        desc: "A modern mega-development offering business, leisure, and beaches."
+        label: "Ancient Building",
+        image: "/images/saudi/ancient-building.jpeg",
+        desc: "Historical landmarks showcasing Jeddah’s rich cultural heritage."
     },
     {
         icon: Sparkles,
-        label: "Art & Cultural Spots",
-        image: "/images/saudi/culture.jpg",
-        desc: "Galleries, museums, and cultural experiences across Jeddah."
+        label: "Camel Rides",
+        image: "/images/saudi/camel.jpeg",
+        desc: "Cultural experiences across Jeddah."
     },
     {
-        icon: Car,
-        label: "Easy Road Access",
-        image: "/images/saudi/roads.jpg",
-        desc: "Strong connectivity with major highways and city-wide access."
+        icon: Funnel,
+        label: "Baboon Encounters",
+        image: "/images/saudi/baboon.jpeg",
+        desc: "Strong cultural, natural experiences accross Jeddah."
     },
     {
         icon: MapPin,
-        label: "Prime Northern Districts",
-        image: "/images/saudi/north-jeddah.jpg",
-        desc: "High-demand residential areas with modern amenities and shopping."
+        label: "Theme Park",
+        image: "/images/saudi/theme-park.jpeg",
+        desc: "High-demand areas with modern activies opportunities and shopping."
     },
 ];
 
