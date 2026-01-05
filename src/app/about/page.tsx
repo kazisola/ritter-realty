@@ -6,7 +6,7 @@ const AboutPage = () => {
         <main>
             <LoyalHeroSection />
             <ExperienceTimeline />
-            <TeamSection />
+            {/* <TeamSection /> */}
             <ExpertiseSection />
             <DubaiInvestmentSection />
             <PhilosophySection />

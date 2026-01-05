@@ -20,40 +20,26 @@ export function OurPartnersSection() {
                 {/* Cards */}
                 <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
 
-                    {/* ZeroxLab Digital */}
-                    {/* <div className="rounded-2xl bg-white p-10  shadow-sm hover:shadow-md transition">
-                        <div className="h-16 w-16 rounded-xl bg-[#2E114D] text-white flex items-center justify-center text-3xl font-bold mb-6">
-                            Z
+                    {/* BeachLife Development */}
+                    <div className="rounded-2xl bg-white p-10 border border-neutral-200 shadow-sm hover:shadow-md transition">
+                        <div className="relative w-24 h-24 mb-6">
+                            <Image
+                                src="/images/beachlife.jpeg"
+                                alt="BeachLife logo"
+                                fill
+                                className="object-contain"
+                            />
                         </div>
 
                         <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                            ZeroxLab Digital
+                            BeachLife Development
                         </h3>
 
                         <p className="text-neutral-600 leading-relaxed text-sm">
-                            ZeroxLab is a US-based digital agency led by {" "}
-                            <a href="mailto:kazisolayman123@gmail.com" className="font-medium underline underline-offset-4">
-                                Kazi Solayman
-                            </a>, specializing in web and app development, custom software systems, AI Integration, SEO, and digital marketing.
-                        </p>
-                    </div> */}
-                    {/* Kazi Solayman */}
-                    <div className="rounded-2xl bg-white p-10 shadow-sm hover:shadow-md transition">
-                        <div className="h-16 w-16 rounded-xl bg-[#2E114D] text-white flex items-center justify-center text-3xl font-bold mb-6">
-                            KS
-                        </div>
-                        <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                            Kazi Solayman
-                        </h3>
-                        <p className="text-neutral-600 leading-relaxed text-sm">
-                            <a href="mailto:kazisolayman123@gmail.com" className="font-medium underline underline-offset-4">
-                                Kazi
-                            </a> is a US based full-stack developer specializing in web development, custom
-                            software, and AI solutions for businesses. He partners with businesses to deliver
-                            clean, scalable, results-focused products.
+                            A respected name in premium property development, delivering high–standard residential
+                            and commercial projects across international markets.
                         </p>
                     </div>
-
 
                     {/* GO Real Estate */}
                     <div className="rounded-2xl bg-white p-10 border border-neutral-200 shadow-sm hover:shadow-md transition">
@@ -94,6 +80,23 @@ export function OurPartnersSection() {
                         <p className="text-neutral-600 leading-relaxed text-sm">
                             DAR brings architectural excellence and innovative real estate concepts, contributing
                             to world-class modern developments.
+                        </p>
+                    </div>
+
+                    {/* Kazi Solayman */}
+                    <div className="rounded-2xl bg-white p-10 shadow-sm hover:shadow-md transition">
+                        <div className="h-16 w-16 rounded-xl bg-[#2E114D] text-white flex items-center justify-center text-3xl font-bold mb-6">
+                            KS
+                        </div>
+                        <h3 className="text-xl font-semibold text-neutral-900 mb-3">
+                            Kazi Solayman
+                        </h3>
+                        <p className="text-neutral-600 leading-relaxed text-sm">
+                            <a href="mailto:kazisolayman123@gmail.com" className="font-medium underline underline-offset-4">
+                                Kazi
+                            </a> is a US based full-stack developer specializing in web development, custom
+                            software, and AI solutions for businesses. He partners with businesses to deliver
+                            clean, scalable, results-focused products.
                         </p>
                     </div>
 
