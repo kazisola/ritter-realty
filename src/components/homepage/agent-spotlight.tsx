@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export function AgentSpotlight() {
   return (
-    <section className="pb-24">
+    <section className="py-24">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
