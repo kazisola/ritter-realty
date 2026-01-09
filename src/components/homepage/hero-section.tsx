@@ -63,7 +63,7 @@ export function HeroSection() {
 
               <div className="flex flex-wrap gap-5">
                 <button 
-                  onClick={() => router.push("/listings")}
+                  onClick={() => router.push("/listings/hurricane-proof?type=residential")}
                   className="group relative px-8 py-4 bg-[#1A1A1A] text-white overflow-hidden transition-all cursor-pointer rounded-full"
                 >
                   <span className="relative z-10 flex items-center gap-3 text-sm font-medium tracking-wide">

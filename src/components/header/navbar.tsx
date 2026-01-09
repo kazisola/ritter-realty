@@ -11,8 +11,8 @@ const Navbar = () => {
         {
             name: "Listings",
             sub_menu: [
-                { icon: <Building size={20} />, title: "Dubai", desc: "200 properties", link: "/listings/dubai" },
-                { icon: <Building size={20} />, title: "Saudi Arabia", desc: "150 properties", link: "/listings/saudi-arabia" },
+                { icon: <Building size={20} />, title: "Dubai", desc: "200 properties", link: "/listings/dubai", type: "mixed" },
+                { icon: <Building size={20} />, title: "Saudi Arabia", desc: "150 properties", link: "/listings/saudi-arabia", type: "mixed" },
                 {
                     icon: <Palmtree size={20} />,
                     title: "SW Florida",
