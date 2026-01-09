@@ -3,7 +3,7 @@ import { Building, ChevronDown, ChevronRight, House, Menu, Palmtree, ShieldCheck
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
     const navs = [
@@ -45,13 +45,36 @@ const Navbar = () => {
     const pathname = usePathname();
     const router = useRouter();
 
+    const navRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (navRef.current && !navRef.current.contains(e.target as Node)) {
+                setActiveDropdown(null);
+                setActiveNested(null);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
     useEffect(() => {
         document.body.style.overflow = showResponsiveNav ? "hidden" : "auto";
         return () => { document.body.style.overflow = "auto"; };
     }, [showResponsiveNav]);
 
+    useEffect(() => {
+        const closeDropdowns = () => {
+            setActiveDropdown(null);
+            setActiveNested(null);
+            setShowResponsiveNav(false);
+        };
+        closeDropdowns();
+    }, [pathname]);
+
+
     return (
-        <nav className="relative z-50">
+        <nav ref={navRef} className="relative z-50">
             {/* Desktop Nav */}
             <ul className="flex items-center gap-6 max-md:hidden">
                 {navs.map((nav, index) => (
