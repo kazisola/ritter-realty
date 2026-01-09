@@ -24,8 +24,12 @@
         ],
         "images": [
             "/images/hurricane-proof/Seaside Sanctuary Front.png",
-            "/images/florida/seaside-sanctuary-2.jpg",
-            "/images/florida/seaside-sanctuary-3.jpg"
+            "/images/hurricane-proof/Seaside Sanctuary Drawing.png",
+            "/images/hurricane-proof/Seaside Sanctuary Brochure_Page_2.jpg",
+            "/images/hurricane-proof/Seaside Sanctuary Brochure_Page_3.jpg",
+            "/images/hurricane-proof/Seaside Sanctuary Brochure_Page_4.jpg",
+            "/images/hurricane-proof/Seaside Sanctuary Brochure_Page_5.jpg",
+            "/images/hurricane-proof/Seaside Sanctuary Brochure_Page_6.jpg"
         ],
         "agent": {
             "name": "Loyal Ritter",
