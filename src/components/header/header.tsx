@@ -17,7 +17,7 @@ export const Header = () => {
                 Ritter Realty
             </Link>
             <Navbar />
-            <button onClick={() => router.push("/contact")} className='max-md:hidden bg-[#00786F] text-white font-semibold text-base w-44 h-11 rounded-full cursor-pointer'>Schedule Meet</button>
+            <button onClick={() => router.push("/contact")} className='max-md:hidden bg-[#1A1A1A] text-white font-semibold text-base w-44 h-11 rounded-full cursor-pointer'>Schedule Meet</button>
         </header>
     );
 };
