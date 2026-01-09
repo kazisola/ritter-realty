@@ -1,5 +1,5 @@
 import ActivitiesEnjoy from '@/components/listings/ActivitiesEnjoy/ActivitiesEnjoy';
-import FilterProperties from '@/components/listings/FilterProperties/FilterProperties';
+// import FilterProperties from '@/components/listings/FilterProperties/FilterProperties';
 import ListingHeader from '@/components/listings/ListingHeader/ListingHeader';
 import Properties from '@/components/listings/Properties/Properties';
 import React from 'react';
@@ -14,6 +14,11 @@ interface RegionPageProps {
 }
 
 const regionMeta = {
+  "hurricane-proof": {
+    title: "Hurricane Proof Luxury Properties",
+    desc: "Hurricane proof luxury villas, waterfront estates, and premium commercial spaces across SW Florida's beautiful coastline.",
+    background: "/images/penthouse-gulf-view-luxury-florida.jpg",
+  },
   florida: {
     title: "Florida Luxury Properties",
     desc: "Discover luxury villas, waterfront estates, and premium commercial spaces across Florida's beautiful coastline.",
@@ -36,21 +41,35 @@ const RegionPage = async ({ params, searchParams }: RegionPageProps) => {
   const { type } = await searchParams;
   const baseMeta = regionMeta[region as keyof typeof regionMeta];
   const meta =
-    region === "florida" && type === "florida-residential"
+    region === "florida" && type === "residential"
       ? {
         ...baseMeta,
         title: "Florida Luxury Residential Homes",
         desc: "Explore luxury residential homes, waterfront villas, and high-end estates across Florida.",
         background: "/images/penthouse-gulf-view-luxury-florida.jpg",
       }
-      : region === "florida" && type === "florida-commercial"
+      : region === "florida" && type === "commercial"
         ? {
           ...baseMeta,
           title: "Florida Commercial Real Estate",
           desc: "Browse premium commercial properties including office buildings, retail spaces, and investments across Florida.",
           background: "/images/luxury-real-estate-office-florida-interior-profess.jpg",
         }
-        : baseMeta;
+        : region === "hurricane-proof" && type === "residential"
+          ? {
+            ...baseMeta,
+            title: "Hurricane Proof Residential Homes",
+            desc: "Explore luxury residential homes, waterfront villas, and high-end estates across Florida.",
+            background: "/images/penthouse-gulf-view-luxury-florida.jpg",
+          }
+          : region === "hurricane-proof" && type === "commercial"
+            ? {
+              ...baseMeta,
+              title: "Hurricane Proof Commercial Real Estate",
+              desc: "Browse premium commercial properties including office buildings, retail spaces, and investments across Florida.",
+              background: "/images/luxury-real-estate-office-florida-interior-profess.jpg",
+            }
+            : baseMeta;
   return (
     <>
       <ListingHeader title={meta.title} desc={meta.desc} background={meta.background} />

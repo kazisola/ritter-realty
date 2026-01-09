@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "slug": "seaside-sanctuary",
+        "title": "Seaside Sanctuary",
+        "location": "Southwest Florida",
+        "type": "Residential",
+        "price": "4,200,000",
+        "beds": 3,
+        "baths": 3,
+        "sqft": "4,826",
+        "lot_size": "N/A",
+        "year_built": 2025,
+        "status": "For Sale",
+        "parking": "4-car garage",
+        "description": "Seaside Sanctuary offers a modern coastal retreat with spacious living areas across three floors. Featuring a total of 4,826 SQ/FT of conditioned space, this home includes open terraces, luxurious spa areas, and seamless indoor-outdoor living.",
+        "amenities": [
+            "Open terraces (2,237 SQ/FT)",
+            "Spa and wellness spaces",
+            "Modern kitchen",
+            "Large living areas",
+            "Smart home features",
+            "4-car garage"
+        ],
+        "images": [
+            "/images/hurricane-proof/Seaside Sanctuary Front.png",
+            "/images/florida/seaside-sanctuary-2.jpg",
+            "/images/florida/seaside-sanctuary-3.jpg"
+        ],
+        "agent": {
+            "name": "Loyal Ritter",
+            "phone": "+1 (941) 830-3618",
+            "email": "loyal@ritterrealtyllc.com"
+        }
+    }
+]

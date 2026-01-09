@@ -15,10 +15,14 @@ const Properties = ({ region }: PropertiesProps) => {
     const [properties, setProperties] = useState<IProperty[]>([]);
     useEffect(() => {
         const handleGetProperties = async () => {
-            const res = await axios.get(`/data/${pathname === '/listings/florida' ? 'florida' : pathname === '/listings/dubai' ? 'dubai' : pathname === '/listings/saudi-arabia' ? 'saudi-arabia' : null}.json`);
-            console.log(res);
-            if (res.status === 200) {
-                setProperties(res.data);
+            try {
+                const res = await axios.get(`/data/${pathname === '/listings/florida' ? 'florida' : pathname === '/listings/dubai' ? 'dubai' : pathname === '/listings/saudi-arabia' ? 'saudi-arabia' : pathname === '/listings/hurricane-proof' ? 'hurricane-proof' : null}.json`);
+                console.log(res);
+                if (res.status === 200) {
+                    setProperties(res.data);
+                }
+            } catch (error) {
+                console.log(error)
             }
         };
         handleGetProperties();
@@ -32,7 +36,7 @@ const Properties = ({ region }: PropertiesProps) => {
                     ))}
                 </div>
                 :
-                <div>No Properties Found</div>
+                <div className='container'>No Properties Found</div>
             }
         </div>
     );

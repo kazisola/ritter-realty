@@ -161,8 +161,8 @@ const Navbar = () => {
             {showResponsiveNav && (
                 <div className="fixed top-0 left-0 w-full h-screen flex flex-col bg-white z-50 px-6 py-4 overflow-y-auto">
                     <div className="flex items-center justify-between mb-5 pb-5 border-b border-gray-100">
-                        <Link href="/" onClick={() => setShowResponsiveNav(false)} className='font-extrabold text-xl text-[#e2b864] flex items-center gap-3'>
-                            <Image src="/images/icononly_transparent_nobuffer.png" alt="Logo" width={100} height={100} className='w-14 h-auto' />
+                        <Link href="/" className='font-extrabold text-xl max-sm:text-xl text-[#e2b864] flex items-center gap-3'>
+                            <Image src={"/images/icononly_transparent_nobuffer.png"} alt={"Ritter Realty Logo"} width={100} height={100} className='w-14 max-sm:w-11 h-auto' />
                             Ritter Realty
                         </Link>
                         <button onClick={() => setShowResponsiveNav(false)} className="text-gray-700"><X size={26} /></button>

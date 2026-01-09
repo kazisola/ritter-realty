@@ -27,7 +27,7 @@ const Property = ({ property }: PropertyProps) => {
 
             <div className="relative overflow-hidden h-64 bg-secondary/20">
                 <Image
-                    src={"/images/beachfront-luxury-villa-sunset.jpg"}
+                    src={property.images[0] || "/images/beachfront-luxury-villa-sunset.jpg"}
                     alt={property.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     width={200}
@@ -42,7 +42,7 @@ const Property = ({ property }: PropertyProps) => {
 
             <div className="p-6">
                 <h3 className="text-xl font-serif font-bold text-foreground mb-2 line-clamp-2">{property.title}</h3>
-                {/* <p className="text-sm text-gray-600 mb-4">{property.location}</p>
+                <p className="text-sm text-gray-600 mb-4">{property.location}</p>
 
                 {(property.beds > 0 || property.baths > 0) && (
                     <div className="flex gap-4 mb-4 text-sm text-gray-600">
@@ -65,7 +65,7 @@ const Property = ({ property }: PropertyProps) => {
                     </div>
                 )}
 
-                <div className="flex justify-between items-center pt-4 border-t border-border">
+                {/* <div className="flex justify-between items-center pt-4 border-t border-border">
                     <div className="text-2xl font-serif font-bold text-[#00786F]">{property.price}</div>
                     <button className="text-[#00786F] hover:text-[#00786F]/80 font-semibold transition-colors">View Item</button>
                 </div> */}
