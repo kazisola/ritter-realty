@@ -46,7 +46,7 @@ const Property = ({ property }: PropertyProps) => {
                 />
 
                 {images.length > 1 && (
-                    <div className="absolute inset-0 flex items-center justify-between p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="absolute inset-0 flex items-center justify-between p-2 transition-opacity">
                         <button
                             onClick={prevImage}
                             className="cursor-pointer p-1.5 rounded-full bg-white/80 text-gray-800 hover:bg-white shadow-sm transition-colors"

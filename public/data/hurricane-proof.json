@@ -36,5 +36,44 @@
             "phone": "+1 (941) 830-3618",
             "email": "loyal@ritterrealtyllc.com"
         }
+    },
+    {
+        "id": 2,
+        "slug": "estuary-estate",
+        "title": "Estuary Estate",
+        "location": "Southwest Florida",
+        "type": "Residential",
+        "price": "4,200,000",
+        "beds": 3,
+        "baths": 2.5,
+        "sqft": "5,317",
+        "lot_size": "N/A",
+        "year_built": 2025,
+        "status": "For Sale",
+        "parking": "4-car garage",
+        "description": "Estuary Estate offers a modern coastal retreat with spacious living areas across three floors. Featuring a total of 5,317 SQ/FT of conditioned space, this home includes open terraces, luxurious spa areas, and seamless indoor-outdoor living.",
+        "amenities": [
+            "Open terraces (2,484 SQ/FT)",
+            "Spa and wellness spaces",
+            "Modern kitchen",
+            "Large living areas",
+            "Smart home features",
+            "4-car garage"
+        ],
+        "images": [
+            "/images/hurricane-proof/estuaryestate/Front.png",
+            "/images/hurricane-proof/estuaryestate/Side.png",
+            "/images/hurricane-proof/estuaryestate/Front layout.png",
+            "/images/hurricane-proof/estuaryestate/Garage Layout.png",
+            "/images/hurricane-proof/estuaryestate/68ad2466b6797a5e096e55b5_28.png",
+            "/images/hurricane-proof/estuaryestate/68ad247409f88ef2e323f90e_29.png",
+            "/images/hurricane-proof/estuaryestate/Windows and Deck.front.png",
+            "/images/hurricane-proof/estuaryestate/Windows and Deck.back.png"
+        ],
+        "agent": {
+            "name": "Loyal Ritter",
+            "phone": "+1 (941) 830-3618",
+            "email": "loyal@ritterrealtyllc.com"
+        }
     }
 ]
