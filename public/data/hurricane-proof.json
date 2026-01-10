@@ -75,5 +75,39 @@
             "phone": "+1 (941) 830-3618",
             "email": "loyal@ritterrealtyllc.com"
         }
+    },
+    {
+        "id": 3,
+        "slug": "coastal-retreat",
+        "title": "Coastal Retreat",
+        "location": "Southwest Florida",
+        "type": "Residential",
+        "price": "4,200,000",
+        "beds": 3,
+        "baths": 2,
+        "sqft": "4,425",
+        "lot_size": "N/A",
+        "year_built": 2025,
+        "status": "For Sale",
+        "parking": "3-car garage",
+        "description": "Coastal Retreat offers a modern coastal retreat with spacious living areas across three floors. Featuring a total of 4,425 and livable 2,200 SQ/FT of conditioned space, this home includes open terraces, luxurious spa areas, and seamless indoor-outdoor living.",
+        "amenities": [
+            "Open terraces (2,484 SQ/FT)",
+            "Spa and wellness spaces",
+            "Modern kitchen",
+            "Large living areas",
+            "Smart home features",
+            "3-car garage"
+        ],
+        "images": [
+            "/images/hurricane-proof/Coastal.Retreat.Front.png",
+            "/images/hurricane-proof/Coastal.Retreat.2nd.Floor.png",
+            "/images/hurricane-proof/coastal_retreat_bottom_floor.png"
+        ],
+        "agent": {
+            "name": "Loyal Ritter",
+            "phone": "+1 (941) 830-3618",
+            "email": "loyal@ritterrealtyllc.com"
+        }
     }
 ]
