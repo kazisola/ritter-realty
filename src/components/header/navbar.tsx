@@ -1,5 +1,5 @@
 "use client";
-import { Building, ChevronDown, ChevronRight, House, Menu, Palmtree, ShieldCheck, X } from "lucide-react";
+import { BookCheck, Building, ChevronDown, ChevronRight, House, Menu, Palmtree, ShieldCheck, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -31,6 +31,7 @@ const Navbar = () => {
                     children: [
                         { icon: <House size={18} />, title: "Residential", link: "/listings/hurricane-proof", type: "residential" },
                         { icon: <Building size={18} />, title: "Commercial", link: "/listings/hurricane-proof", type: "commercial" },
+                        { icon: <BookCheck size={18} />, title: "Construction Specs", link: "/listings/hurricane-proof-specs", type: null }
                     ]
                 }
             ],
@@ -117,7 +118,7 @@ const Navbar = () => {
 
                                                 {/* Flyout for Residential/Commercial */}
                                                 {activeNested === item.title && (
-                                                    <ul className="absolute left-full top-0 ml-2 bg-white rounded-xl shadow-lg p-2 w-40 border border-gray-100">
+                                                    <ul className="absolute left-full top-0 ml-2 bg-white rounded-xl shadow-lg p-2 w-52 border border-gray-100">
                                                         {item.children?.map((child, cIdx) => (
                                                             <li key={cIdx}>
                                                                 <Link
