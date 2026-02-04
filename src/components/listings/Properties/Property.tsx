@@ -3,6 +3,7 @@ import { IProperty } from '@/types/property';
 import { Bath, Bed, Ruler, ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
 
 interface PropertyProps {
@@ -10,6 +11,7 @@ interface PropertyProps {
 }
 
 const Property = ({ property }: PropertyProps) => {
+    const pathname = usePathname();
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = property.images?.length > 0 ? property.images : ["/images/beachfront-luxury-villa-sunset.jpg"];
 
@@ -25,14 +27,14 @@ const Property = ({ property }: PropertyProps) => {
 
     return (
         <Link
-            href={'#'}
-            // href={{
-            //     pathname: `${pathname}/${property.id}`,
-            //     query: {
-            //         title: property.title.toLowerCase(),
-            //         location: property.location.toLowerCase()
-            //     }
-            // }}
+            // href={'#'}
+            href={pathname === "/listings/saudi-arabia" ? {
+                pathname: `${pathname}/${property.id}`,
+                query: {
+                    title: property.title.toLowerCase(),
+                    location: property.location.toLowerCase()
+                }
+            } : "#"}
             className="group block bg-white rounded-2xl overflow-hidden border border-gray-50 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] cursor-pointer"
         >
 

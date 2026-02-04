@@ -25,7 +25,7 @@ const PropertyContactSidebar = ({ property }: PropertyContactSidebarProps) => {
           <h3 className="text-lg font-bold">Loyal Ritter</h3>
           <p className="text-sm text-gray-600 mb-4">Senior Broker Associate</p>
           <div className="space-y-2 text-sm text-gray-800 mb-4">
-            <p>Corr Commercial Advisors</p>
+            <p>Ritter Realty LLC</p>
             <p>25+ Years Experience</p>
           </div>
           <a
@@ -36,11 +36,11 @@ const PropertyContactSidebar = ({ property }: PropertyContactSidebarProps) => {
             941–830–3618
           </a>
           <a
-            href="mailto:loyal@dubairealestateinvestments.com"
+            href="mailto:loyal@ritterrealtyllc.com"
             className="flex items-center gap-2 text-[#dbb45c] hover:text-[#d3a844] font-semibold text-sm"
           >
             <Mail size={16} />
-            loyal@dubai...
+            loyal@ritterrealtyllc.com
           </a>
         </div>
       </div>

@@ -1,111 +1,197 @@
+"use client"
+
 import { IProperty } from "@/types/property"
-import { MapPin, Calendar, DollarSign, Home, Zap } from "lucide-react"
+import {
+  MapPin,
+  Calendar,
+  DollarSign,
+  Home,
+  Zap,
+  Building2,
+  Layers,
+  ShieldCheck,
+} from "lucide-react"
 
 interface PropertyDetailsSectionProps {
   property: IProperty
 }
 
 const PropertyDetailsSection = ({ property }: PropertyDetailsSectionProps) => {
-  const formatPrice = (price: number) =>
-    new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(price)
+  const isProject = property.beds === 0 && property.unit_types?.length > 0
+
+  const formatPriceText = (price?: string) => price || "Price on request"
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* Header */}
       <div>
         <div className="flex items-center gap-2 text-[#00786F] mb-2">
           <MapPin size={18} />
           <span className="font-semibold">{property.location}</span>
         </div>
-        <h1 className="text-4xl sm:text-5xl font-serif font-bold mb-4">{property.title}</h1>
+
+        <h1 className="text-4xl sm:text-5xl font-serif font-bold mb-4">
+          {property.title}
+        </h1>
+
         <div className="text-3xl sm:text-4xl font-serif font-bold">
-            {formatPrice(Number(property.price.replace(/[^0-9.-]+/g, "")) || 0)}
+          {formatPriceText(property.price)}
         </div>
       </div>
 
-      {/* Quick Stats */}
+      {/* QUICK STATS */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {property.beds > 0 && (
-          <div className="bg-[#dbb55c2c] p-4 rounded-lg">
-            <div className="text-sm text-gray-500 mb-1">Bedrooms</div>
-            <div className="text-2xl font-bold text-[#dbb45c]">{property.beds}</div>
-          </div>
+        {!isProject && property.beds > 0 && (
+          <Stat title="Bedrooms" value={property.beds} />
         )}
-        {property.baths > 0 && (
-          <div className="bg-[#dbb55c2c] p-4 rounded-lg">
-            <div className="text-sm text-gray-600 mb-1">Bathrooms</div>
-            <div className="text-2xl font-bold text-[#dbb45c]">{property.baths}</div>
-          </div>
+
+        {!isProject && property.baths > 0 && (
+          <Stat title="Bathrooms" value={property.baths} />
         )}
-        <div className="bg-[#dbb55c2c] p-4 rounded-lg">
-          <div className="text-sm text-gray-600 mb-1">Square Feet</div>
-          <div className="text-2xl font-bold text-[#dbb45c]">{property.sqft.toLocaleString()}</div>
-        </div>
-        <div className="bg-[#dbb55c2c] p-4 rounded-lg">
-          <div className="text-sm text-gray-600 mb-1">HOA Fees</div>
-          <div className="text-2xl font-bold text-[#dbb45c]">
-            $
-            {/* {(property.hoaFees / 1000).toFixed(1)} */} 0
-            k/mo
-            </div>
-        </div>
+
+        {isProject ? (
+          <Stat title="Floors" value={property.project_overview?.floors} />
+        ) : (
+          <Stat title="Square Feet" value={property.sqft?.toLocaleString()} />
+        )}
+
+        <Stat
+          title="Status"
+          value={property.status || "Active"}
+        />
       </div>
 
-      {/* Description */}
+      {/* DESCRIPTION */}
       <div>
-        <h2 className="text-2xl font-serif font-bold mb-4">About This Property</h2>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">{property.description}</p>
+        <h2 className="text-2xl font-serif font-bold mb-4">
+          About This {isProject ? "Project" : "Property"}
+        </h2>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          {property.description}
+        </p>
       </div>
 
-      {/* Property Details Grid */}
-      <div className="grid grid-cols-2 gap-6 py-6 border-t border-b border-slate-900/10">
-        <div className="flex items-start gap-4">
-          <Calendar className="text-[#00786F] flex-shrink-0" size={20} />
-          <div>
-            <div className="text-sm text-gray-600">Year Built</div>
-            <div className="text-base font-semibold ">{property.year_built}</div>
+      {/* PROJECT OVERVIEW */}
+      {isProject && property.project_overview && (
+        <div>
+          <h2 className="text-2xl font-serif font-bold mb-6">
+            Project Overview
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* <InfoItem
+              icon={<Building2 />}
+              label="Developer"
+              value={property.project_overview.developer}
+            /> */}
+            <InfoItem
+              icon={<ShieldCheck />}
+              label="Ownership"
+              value={property.project_overview.ownership}
+            />
+            <InfoItem
+              icon={<Layers />}
+              label="Completion"
+              value={property.project_overview.anticipated_completion}
+            />
+            <InfoItem
+              icon={<Home />}
+              label="Property Type"
+              value={property.project_overview.property_type}
+            />
           </div>
         </div>
-        <div className="flex items-start gap-4">
-          <Home className="text-[#00786F] flex-shrink-0" size={20} />
-          <div>
-            <div className="text-sm text-gray-600">Lot Size</div>
-            <div className="text-base font-semibold ">{property.lot_size}</div>
+      )}
+
+      {/* UNIT TYPES */}
+      {isProject && property.unit_types?.length > 0 && (
+        <div>
+          <h2 className="text-2xl font-serif font-bold mb-4">
+            Available Unit Types
+          </h2>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border border-slate-900/10 rounded-lg">
+              <thead className="bg-[#dbb55c2c]">
+                <tr>
+                  <th className="p-3 text-left">Type</th>
+                  <th className="p-3 text-left">Size</th>
+                  <th className="p-3 text-left">Starting Price</th>
+                  <th className="p-3 text-left">Parking</th>
+                </tr>
+              </thead>
+              <tbody>
+                {property.unit_types.map((unit, i) => (
+                  <tr key={i} className="border-t">
+                    <td className="p-3 font-medium">{unit.type}</td>
+                    <td className="p-3">{unit.size_range}</td>
+                    <td className="p-3 font-semibold">
+                      {unit.starting_price}
+                    </td>
+                    <td className="p-3">{unit.parking}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
-        <div className="flex items-start gap-4">
-          <DollarSign className="text-[#00786F] flex-shrink-0" size={20} />
-          <div>
-            <div className="text-sm text-gray-600">Monthly HOA</div>
-            <div className="text-base font-semibold ">
-                $
-                {/* {property.hoaFees.toLocaleString()} */} 0
+      )}
+
+      {/* PAYMENT PLAN */}
+      {isProject && property.payment_plan?.length > 0 && (
+        <div>
+          <h2 className="text-2xl font-serif font-bold mb-4">
+            Payment Plan
+          </h2>
+
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            {property.payment_plan.map((step, i) => (
+              <div
+                key={i}
+                className="bg-[#dbb55c2c] p-4 rounded-lg"
+              >
+                <div className="text-sm text-gray-600 mb-1">
+                  {step.stage}
                 </div>
+                <div className="text-2xl font-bold text-[#dbb45c]">
+                  {step.percentage}%
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-        <div className="flex items-start gap-4">
-          <Zap className="text-[#00786F] flex-shrink-0" size={20} />
-          <div>
-            <div className="text-sm text-gray-600">Status</div>
-            <div className="text-base font-semibold">Active</div>
-          </div>
-        </div>
-      </div>
-
-      {/* Investment Metrics */}
-      {/* <div>
-        <h3 className="text-xl font-serif font-bold text-foreground mb-4">Investment Metrics</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {Object.entries(property.investmentMetrics).map(([key, value]) => (
-            <div key={key} className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-              <div className="text-sm text-gray-600 capitalize mb-1">{key.replace(/([A-Z])/g, " $1").trim()}</div>
-              <div className="text-xl font-bold text-accent">{value}</div>
-            </div>
-          ))}
-        </div>
-      </div> */}
+      )}
     </div>
   )
 }
 
-export default PropertyDetailsSection;
+/* Small helpers */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const Stat = ({ title, value }: { title: string; value?: any }) => (
+  <div className="bg-[#dbb55c2c] p-4 rounded-lg">
+    <div className="text-sm text-gray-600 mb-1">{title}</div>
+    <div className="text-2xl font-bold text-[#dbb45c]">
+      {value ?? "—"}
+    </div>
+  </div>
+)
+
+const InfoItem = ({
+  icon,
+  label,
+  value,
+}: {
+  icon: React.ReactNode
+  label: string
+  value?: string
+}) => (
+  <div className="flex gap-4 items-start">
+    <div className="text-[#00786F]">{icon}</div>
+    <div>
+      <div className="text-sm text-gray-600">{label}</div>
+      <div className="font-semibold">{value}</div>
+    </div>
+  </div>
+)
+
+export default PropertyDetailsSection

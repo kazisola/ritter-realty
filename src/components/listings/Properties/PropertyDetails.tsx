@@ -39,13 +39,13 @@ const PropertyDetails = ({ region, id }: PropertyDetailsProp) => {
         <div className=''>
             {property && !loading ?
                 <div>
-                    <PropertyHeroGallery images={property.images} title={property.title} />
+                    <PropertyHeroGallery images={property.images} video={property.video} title={property.title} />
 
                     <div className="container px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-2 space-y-8">
                             <PropertyDetailsSection property={property} />
                             <PropertyAmenities amenities={property.amenities} />
-                            <PropertyFinancing price={property.price} />
+                            {/* <PropertyFinancing price={property.price} /> */}
                         </div>
 
                         <div className="lg:sticky lg:top-32 h-fit">

@@ -1,117 +1,127 @@
 [
   {
-    "id": 1,
-    "slug": "riyadh-luxury-villa",
-    "title": "Riyadh Luxury Villa",
-    "location": "Al Nakheel, Riyadh",
-    "type": "Residential",
-    "price": "4,500,000",
-    "beds": 5,
-    "baths": 6,
-    "sqft": "10,200",
-    "lot_size": "1 acre",
-    "year_built": 2021,
-    "status": "For Sale",
-    "parking": "3-car garage",
-    "description": "A magnificent villa in Al Nakheel, featuring Arabian-inspired architecture, expansive courtyards, and a private swimming pool. Perfect blend of modern design and traditional elegance.",
-    "amenities": [
-      "Private pool",
-      "Guest house",
-      "Landscaped garden",
-      "Maid’s quarters",
-      "Smart security system"
+    "id": 999,
+    "slug": "trump-tower-jeddah",
+    "title": "Trump Tower Jeddah",
+    "location": "Jeddah Corniche, Kingdom of Saudi Arabia",
+    "type": "Luxury Residential Tower",
+    "status": "Off-Plan",
+    "year_built": 2029,
+    "price": "Starting from SAR 1,762,900",
+    "beds": 0,
+    "baths": 0,
+    "sqft": 0,
+    "lot_size": "47-Storey High-Rise Tower",
+    "description": "Trump Tower Jeddah is a 47-storey iconic waterfront residential tower, offering luxury apartments and penthouses with panoramic Red Sea views. The project allows 100% foreign ownership and is strategically located minutes from Jeddah’s premier hotels, beach destinations, and the Formula 1 racetrack. Residences feature premium European finishes, high-end appliances, and world-class lifestyle amenities.",
+    "project_overview": {
+      "developer": "N/A",
+      "ownership": "100% Foreign Ownership",
+      "property_type": "Apartments & Penthouses",
+      "unit_finish": "Unfurnished",
+      "floors": 47,
+      "anticipated_completion": "December 2029",
+      "service_charges": "75 SAR / SQM",
+      "registration_fee": "5% (on completion)",
+      "resale_allowed": "Up to 40%"
+    },
+    "unit_types": [
+      {
+        "type": "1 Bedroom Apartment",
+        "size_range": "70 – 102 SQM",
+        "starting_price": "SAR 1,762,900",
+        "parking": "1 Slot"
+      },
+      {
+        "type": "2 Bedroom Apartment",
+        "size_range": "99 – 158 SQM",
+        "starting_price": "SAR 2,524,500",
+        "parking": "1 Slot"
+      },
+      {
+        "type": "3 Bedroom Apartment",
+        "size_range": "145 – 170 SQM",
+        "starting_price": "SAR 4,270,700",
+        "parking": "1 Slot"
+      },
+      {
+        "type": "4 Bedroom Apartment",
+        "size_range": "180 SQM",
+        "starting_price": "SAR 6,043,500",
+        "parking": "2 Slots"
+      },
+      {
+        "type": "3 Bedroom Penthouse",
+        "size_range": "300 – 312 SQM",
+        "starting_price": "SAR 12,142,400",
+        "parking": "2 Slots"
+      },
+      {
+        "type": "4 Bedroom Penthouse",
+        "size_range": "365 SQM",
+        "starting_price": "SAR 15,339,660",
+        "parking": "2 Slots"
+      }
     ],
-    "images": [],
+    "amenities": [
+      "Swimming Pool",
+      "Kids Pool",
+      "Fully Equipped Gym",
+      "EV Charging Stations",
+      "Underground Parking",
+      "24/7 Security",
+      "High-Speed Elevators",
+      "Sea View Residences"
+    ],
+    "images": [
+      "/images/trump/TTJ_1.jpg",
+      "/images/trump/TTJ_3.jpg",
+      "/images/trump/TTJ_6.jpg",
+      "/images/trump/TTJ_7.jpg",
+      "/images/trump/Trump_Apartment_LivingRoom.jpg",
+      "/images/trump/Trump_Apartment_MasterBedroom.jpg",
+      "/images/trump/Trump_Private_Club_Restaurant_Bar.jpg",
+      "/images/trump/Trump_Private_Club_Cigar_Room.jpg"
+    ],
+    "video": "/videos/Trump_Tower_Jeddah_1.mp4",
+    "brochure": "/docs/trump-tower-jeddah-factsheet.pdf",
+    "payment_plan": [
+      {
+        "stage": "Booking",
+        "percentage": 20
+      },
+      {
+        "stage": "Ground Floor Completion",
+        "percentage": 10
+      },
+      {
+        "stage": "5th Floor Completion",
+        "percentage": 10
+      },
+      {
+        "stage": "10th Floor Completion",
+        "percentage": 10
+      },
+      {
+        "stage": "15th Floor Completion",
+        "percentage": 10
+      },
+      {
+        "stage": "20th Floor Completion",
+        "percentage": 10
+      },
+      {
+        "stage": "30th Floor Completion",
+        "percentage": 10
+      },
+      {
+        "stage": "Completion (Dec 2029)",
+        "percentage": 10
+      }
+    ],
     "agent": {
-      "name": "Faisal Al-Harbi",
+      "name": "DarGlobal Sales Team",
       "phone": "+966 55 678 9032",
-      "email": "faisal.harbi@ksaestates.com"
-    }
-  },
-  {
-    "id": 2,
-    "slug": "jeddah-seaside-villa",
-    "title": "Jeddah Seaside Villa",
-    "location": "Obhur, Jeddah",
-    "type": "Residential",
-    "price": "3,800,000",
-    "beds": 4,
-    "baths": 5,
-    "sqft": "7,900",
-    "lot_size": "0.6 acres",
-    "year_built": 2020,
-    "status": "For Sale",
-    "parking": "2-car garage",
-    "description": "An elegant seaside villa in Jeddah’s Obhur area, offering private beach access and panoramic Red Sea views. Perfect for families seeking privacy and luxury.",
-    "amenities": [
-      "Private beach access",
-      "Infinity pool",
-      "Home theater",
-      "Smart home system",
-      "Rooftop terrace"
-    ],
-    "images": [],
-    "agent": {
-      "name": "Sara Al-Mutairi",
-      "phone": "+966 54 211 7345",
-      "email": "sara.mutairi@ksaestates.com"
-    }
-  },
-  {
-    "id": 3,
-    "slug": "riyadh-financial-district-tower",
-    "title": "Riyadh Financial District Tower",
-    "location": "King Abdullah Financial District, Riyadh",
-    "type": "Commercial",
-    "price": "22,000,000",
-    "beds": 0,
-    "baths": 0,
-    "sqft": "80,000",
-    "lot_size": "1.5 acres",
-    "year_built": 2017,
-    "status": "For Sale",
-    "parking": "150+ spaces",
-    "description": "A world-class commercial tower in Riyadh’s Financial District offering premium office spaces with advanced security, smart energy systems, and luxurious interiors.",
-    "amenities": [
-      "24/7 security",
-      "Conference floors",
-      "High-speed elevators",
-      "Cafeteria",
-      "Underground parking"
-    ],
-    "images": [],
-    "agent": {
-      "name": "Abdullah Al-Qahtani",
-      "phone": "+966 50 445 2189",
-      "email": "abdullah.qahtani@ksaestates.com"
-    }
-  },
-  {
-    "id": 4,
-    "slug": "jeddah-mall-complex",
-    "title": "Jeddah Mall Complex",
-    "location": "Prince Sultan Road, Jeddah",
-    "type": "Commercial",
-    "price": "14,500,000",
-    "beds": 0,
-    "baths": 0,
-    "sqft": "65,000",
-    "lot_size": "2.3 acres",
-    "year_built": 2016,
-    "status": "For Sale",
-    "parking": "200+ spaces",
-    "description": "A fully operational mall complex in Jeddah’s busiest retail district. Ideal for high-end retail brands and long-term investors.",
-    "amenities": [
-      "Food court",
-      "Cinema complex",
-      "Underground parking",
-      "Security and maintenance services"
-    ],
-    "images": [],
-    "agent": {
-      "name": "Lina Al-Shehri",
-      "phone": "+966 53 998 2045",
-      "email": "lina.shehri@ksaestates.com"
+      "email": "sales@darglobal.co.uk"
     }
   }
 ]
