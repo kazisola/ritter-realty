@@ -3,13 +3,16 @@
 import { Heart, MapPin, Bed, Bath, Ruler } from "lucide-react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { IProperty } from "@/types/property"
+import axios from "axios"
+import Property from "../listings/Properties/Property"
 
 const featuredListings = [
   {
@@ -63,6 +66,30 @@ const featuredListings = [
 ]
 
 export function FeaturedListings() {
+  const [featuredProperties, setFeaturedProperties] = useState<IProperty[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const [hurricaneProps, saudiProps] = await Promise.all([
+          axios.get("/data/hurricane-proof.json"),
+          axios.get("/data/saudi-arabia.json"),
+        ]);
+
+        if (hurricaneProps.status === 200 && saudiProps.status === 200) {
+          setFeaturedProperties([
+            ...hurricaneProps.data,
+            ...saudiProps.data,
+          ]);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   const router = useRouter();
   const [favorites, setFavorites] = useState<number[]>([])
 
@@ -97,73 +124,76 @@ export function FeaturedListings() {
             1024: { slidesPerView: 3.3 },
           }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {featuredListings.map((property) => (
-            <SwiperSlide key={property.id} className="group">
-              <div className="relative overflow-hidden rounded-2xl mb-4">
-                <div className="relative w-full h-80 overflow-hidden rounded-lg group">
-                  <Image
-                    src={property.image || "/placeholder.svg"}
-                    alt={property.title}
-                    fill
-                    quality={100}
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
+          {featuredProperties.map((property) => (
+            // <SwiperSlide key={property.id} className="group">
+            //   <div className="relative overflow-hidden rounded-2xl mb-4">
+            //     <div className="relative w-full h-80 overflow-hidden rounded-lg group">
+            //       <Image
+            //         src={property.images[0] || "/placeholder.svg"}
+            //         alt={property.title}
+            //         fill
+            //         quality={100}
+            //         className="object-cover group-hover:scale-110 transition-transform duration-700"
+            //       />
+            //     </div>
 
-                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            //     <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                <button
-                  onClick={() => toggleFavorite(property.id)}
-                  className="absolute top-4 right-4 bg-white/90 hover:bg-white rounded-full p-3 transition-colors"
-                >
-                  <Heart
-                    size={20}
-                    className={`transition-colors ${favorites.includes(property.id) ? "fill-red-500 text-red-500" : "text-foreground"
-                      }`}
-                  />
-                </button>
+            //     <button
+            //       onClick={() => toggleFavorite(property.id)}
+            //       className="absolute top-4 right-4 bg-white/90 hover:bg-white rounded-full p-3 transition-colors"
+            //     >
+            //       <Heart
+            //         size={20}
+            //         className={`transition-colors ${favorites.includes(property.id) ? "fill-red-500 text-red-500" : "text-foreground"
+            //           }`}
+            //       />
+            //     </button>
 
-                {/* {property.discount && (
-                  <div className="absolute bottom-4 left-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold text-sm">
-                    {property.discount}
-                  </div>
-                )} */}
-              </div>
+            //     {/* {property.discount && (
+            //       <div className="absolute bottom-4 left-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold text-sm">
+            //         {property.discount}
+            //       </div>
+            //     )} */}
+            //   </div>
 
-              <div className="space-y-3">
-                <div>
-                  {/* <div className="flex items-center gap-2 text-teal-700 text-sm font-semibold mb-1">
-                    <MapPin size={16} />
-                    {property.location}
-                  </div> */}
-                  <h3 className="text-xl font-serif font-bold text-foreground">{property.title}</h3>
-                </div>
+            //   <div className="space-y-3">
+            //     <div>
+            //       {/* <div className="flex items-center gap-2 text-teal-700 text-sm font-semibold mb-1">
+            //         <MapPin size={16} />
+            //         {property.location}
+            //       </div> */}
+            //       <h3 className="text-xl font-serif font-bold text-foreground">{property.title}</h3>
+            //     </div>
 
-                {/* <div className="text-3xl font-serif font-bold text-[#dbb45c]">{property.price}</div>
+            //     {/* <div className="text-3xl font-serif font-bold text-[#dbb45c]">{property.price}</div>
 
-                <div className="flex gap-6 text-sm text-gray-600 py-3 border-t border-border pt-4">
-                  {property.beds > 0 && (
-                    <div className="flex items-center gap-2">
-                      <Bed size={18} className="text-teal-700" />
-                      <span>{property.beds} Beds</span>
-                    </div>
-                  )}
-                  {property.baths > 0 && (
-                    <div className="flex items-center gap-2">
-                      <Bath size={18} className="text-teal-700" />
-                      <span>{property.baths} Baths</span>
-                    </div>
-                  )}
-                  <div className="flex items-center gap-2">
-                    <Ruler size={18} className="text-teal-700" />
-                    <span>{property.sqft} Sq Ft</span>
-                  </div>
-                </div> */}
+            //     <div className="flex gap-6 text-sm text-gray-600 py-3 border-t border-border pt-4">
+            //       {property.beds > 0 && (
+            //         <div className="flex items-center gap-2">
+            //           <Bed size={18} className="text-teal-700" />
+            //           <span>{property.beds} Beds</span>
+            //         </div>
+            //       )}
+            //       {property.baths > 0 && (
+            //         <div className="flex items-center gap-2">
+            //           <Bath size={18} className="text-teal-700" />
+            //           <span>{property.baths} Baths</span>
+            //         </div>
+            //       )}
+            //       <div className="flex items-center gap-2">
+            //         <Ruler size={18} className="text-teal-700" />
+            //         <span>{property.sqft} Sq Ft</span>
+            //       </div>
+            //     </div> */}
 
-                <button onClick={() => router.push("/contact")} className="mt-2 cursor-pointer w-full bg-[#00786F] hover:bg-[#048980] text-white py-3 text-sm rounded-lg font-semibold transition-colors">
-                  Contact for Details
-                </button>
-              </div>
+            //     <button onClick={() => router.push("/contact")} className="mt-2 cursor-pointer w-full bg-[#00786F] hover:bg-[#048980] text-white py-3 text-sm rounded-lg font-semibold transition-colors">
+            //       Contact for Details
+            //     </button>
+            //   </div>
+            // </SwiperSlide>
+            <SwiperSlide key={property.id}>
+              <Property property={property} />
             </SwiperSlide>
           ))}
         </Swiper>
