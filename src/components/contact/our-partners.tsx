@@ -84,7 +84,7 @@ export function OurPartnersSection() {
                     </div>
 
                     {/* Kazi Solayman */}
-                    <div className="rounded-2xl bg-white p-10 shadow-sm hover:shadow-md transition">
+                    {/* <div className="rounded-2xl bg-white p-10 shadow-sm hover:shadow-md transition">
                         <div className="h-16 w-16 rounded-xl bg-[#2E114D] text-white flex items-center justify-center text-3xl font-bold mb-6">
                             KS
                         </div>
@@ -98,7 +98,7 @@ export function OurPartnersSection() {
                             software, and AI solutions for businesses. He partners with businesses to deliver
                             clean, scalable, results-focused products.
                         </p>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

@@ -8,7 +8,7 @@ const AboutPage = () => {
             <ExperienceTimeline />
             {/* <TeamSection /> */}
             <ExpertiseSection />
-            <DubaiInvestmentSection />
+            {/* <DubaiInvestmentSection /> */}
             <PhilosophySection />
             <CTASection />
         </main>

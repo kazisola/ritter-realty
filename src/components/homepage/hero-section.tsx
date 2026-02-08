@@ -168,7 +168,7 @@ export function HeroSection() {
             {/* Floating Decorative Label */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-lg max-w-[200px] hidden md:block">
               <p className="text-[10px] text-[#9A8452] font-bold uppercase tracking-tighter mb-1">Featured Estate</p>
-              <p className="text-sm font-serif text-[#1A1A1A] italic">The Azure Collection, Naples FL</p>
+              <p className="text-sm font-serif text-[#1A1A1A] italic">Trump Tower, KSA</p>
             </div>
           </div>
 

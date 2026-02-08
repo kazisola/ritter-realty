@@ -1,15 +1,15 @@
 [
   {
-    "id": 999,
+    "id": 101,
     "slug": "trump-tower-jeddah",
-    "title": "Trump Tower Jeddah",
+    "title": "Trump Tower Jeddah - Luxury Tower",
     "location": "Jeddah Corniche, Kingdom of Saudi Arabia",
     "type": "Luxury Tower",
     "status": "Off-Plan",
     "year_built": 2029,
     "price": "Starting from SAR 1,762,900",
-    "beds": 0,
-    "baths": 0,
+    "beds": 1,
+    "baths": 1,
     "sqft": 0,
     "lot_size": "47-Storey High-Rise Tower",
     "description": "Trump Tower Jeddah is a 47-storey iconic waterfront residential tower, offering luxury apartments and penthouses with panoramic Red Sea views. The project allows 100% foreign ownership and is strategically located minutes from Jeddah’s premier hotels, beach destinations, and the Formula 1 racetrack. Residences feature premium European finishes, high-end appliances, and world-class lifestyle amenities.",
@@ -116,6 +116,92 @@
       {
         "stage": "Completion (Dec 2029)",
         "percentage": 10
+      }
+    ],
+    "agent": {
+      "name": "DarGlobal Sales Team",
+      "phone": "+966 55 678 9032",
+      "email": "sales@darglobal.co.uk"
+    }
+  },
+  {
+    "id": 102,
+    "slug": "trump-plaza-jeddah-executive-residences",
+    "title": "Trump Plaza Jeddah – Executive Residences",
+    "location": "AMAYA, Jeddah, Kingdom of Saudi Arabia",
+    "type": "Executive Residences",
+    "status": "Off-Plan",
+    "year_built": 2030,
+    "price": "Starting from SAR 1,830,000 (approx.)",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 0,
+    "lot_size": "Landmark Mixed-Use Urban District",
+    "description": "Trump Plaza Jeddah Executive Residences are fully furnished turnkey apartments designed for executives, professionals, and global investors seeking premium branded living in Saudi Arabia’s commercial capital. Located within the AMAYA master-planned community on King Abdulaziz Road, the development integrates residences, Grade-A offices, retail, dining, and a private members-only Vitality Club. Optional professional management allows owners to generate rental income with hands-off ownership.",
+    "project_overview": {
+      "developer": "DarGlobal",
+      "ownership": "100% Foreign Ownership (Designated Areas)",
+      "property_type": "Fully Furnished Executive Apartments",
+      "unit_finish": "Turnkey Furnished with Premium Trump Finishes",
+      "floors": 0,
+      "anticipated_completion": "Q4 2030",
+      "service_charges": "To Be Announced",
+      "registration_fee": "5% (Estimated on Completion)",
+      "resale_allowed": "Yes"
+    },
+    "unit_types": [
+      {
+        "type": "1 Bedroom Executive Apartment",
+        "size_range": "70 – 100 SQM",
+        "starting_price": "From SAR 1,830,000",
+        "parking": "1 Slot"
+      },
+      {
+        "type": "2 Bedroom Executive Apartment",
+        "size_range": "100 – 130 SQM",
+        "starting_price": "From SAR 2,500,000",
+        "parking": "1 Slot"
+      },
+      {
+        "type": "3 Bedroom Executive Apartment",
+        "size_range": "130 – 160 SQM",
+        "starting_price": "From SAR 3,200,000",
+        "parking": "1 Slot"
+      }
+    ],
+    "amenities": [
+      "Members-Only Vitality Club (4,000 sqm)",
+      "Indoor & Outdoor Swimming Pools",
+      "Golf Simulators (Trump Golf Courses)",
+      "Spa & Sports Medicine Facilities",
+      "Fully Equipped Gym & Wellness Spaces",
+      "Business Lounges & Co-Working Areas",
+      "Fine Dining & Trump Grill",
+      "Retail & Artisan Bakery",
+      "Central Park-Inspired Grand Park",
+      "24/7 Security & Concierge",
+      "Optional Rental Management Services"
+    ],
+    "images": [
+      "/images/trump-plaza/DGxTrump%20Plaza_Front-Entrance.jpg",
+      "/images/trump-plaza/DGxTrump%20Plaza_Entrance.jpg",
+      "/images/trump-plaza/DGxTrump%20Plaza_Executive%20Residences_3.jpg",
+      "/images/trump-plaza/DGxTrump%20Plaza__Arrival-Dropoff.jpg"
+    ],
+    "video": "/videos/Trump_Plaza_Jeddah_Executive_Residences.mp4",
+    "brochure": "/docs/trump-plaza-jeddah-executive-residences-factsheet.pdf",
+    "payment_plan": [
+      {
+        "stage": "Booking",
+        "percentage": 20
+      },
+      {
+        "stage": "Construction Milestone Installments",
+        "percentage": 60
+      },
+      {
+        "stage": "Handover (Q4 2030)",
+        "percentage": 20
       }
     ],
     "agent": {
