@@ -27,8 +27,7 @@ const Property = ({ property }: PropertyProps) => {
 
     return (
         <Link
-            // href={'#'}
-            href={pathname === "/listings/saudi-arabia" ? {
+            href={pathname === "/listings/saudi-arabia" || pathname === "/listings/hurricane-proof" ? {
                 pathname: `${pathname}/${property.id}`,
                 query: {
                     title: property.title.toLowerCase(),

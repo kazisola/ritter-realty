@@ -54,7 +54,7 @@ const PropertyDetails = ({ region, id }: PropertyDetailsProp) => {
                     </div>
                 </div>
                 :
-                <div>Loading...</div>
+                <div className='container py-4'>Loading...</div>
             }
         </div>
     );
