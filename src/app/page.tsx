@@ -6,9 +6,9 @@ const Home = () => {
       <HeroSection />
       <AgentSpotlight />
       <FeaturedListings />
-      <MarketInsights />
-      <InvestmentOpportunities />
       <VirtualTours />
+      <InvestmentOpportunities />
+      <MarketInsights />
       <LifestyleShowcase />
       <VIPServices />
       <TestimonialSection />

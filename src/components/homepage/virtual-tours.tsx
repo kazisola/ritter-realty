@@ -1,24 +1,30 @@
 "use client"
 
-import { Play, Globe } from "lucide-react"
+import { useState } from "react"
+import { Play, Globe, X } from "lucide-react"
 import Image from "next/image"
 
 export function VirtualTours() {
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+
   const tours = [
     {
-      title: "Oceanfront Penthouse 3D Tour",
-      location: "Southwest FL",
-      image: "/images/luxury-residential-house.jpg",
+      title: "Trump Tower Jeddah Tour",
+      location: "Jeddah, Saudi Arabia",
+      image: "/images/trump/TTJ_1.jpg",
+      video: "/videos/Trump_Tower_Jeddah_1.mp4"
     },
     {
-      title: "Commercial Hub Interactive Tour",
-      location: "Dubai, UAE",
-      image: "/images/commercial-office-building-luxury.jpg",
+      title: "Trump Plaza Jeddah Tour",
+      location: "Jeddah, Saudi Arabia",
+      image: "/images/trump-plaza/DGxTrump Plaza_Front-Entrance.jpg",
+      video: "/videos/Trump-Plaza-Jeddah.mp4"
     },
     {
-      title: "Beachfront Villa Virtual Walkthrough",
-      location: "Jeddah, KSA",
-      image: "/images/beachfront-luxury-villa-sunset.jpg",
+      title: "Amaya Virtual Walkthrough",
+      location: "Jeddah, Saudi Arabia",
+      image: "/images/amaya/Amaya_Plots_Jeddah_1.jpg",
+      video: "/videos/Amaya-Jeddah.mp4"
     },
   ]
 
@@ -35,7 +41,11 @@ export function VirtualTours() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {tours.map((tour, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-2xl cursor-pointer">
+            <div 
+              key={index} 
+              className="group relative overflow-hidden rounded-2xl cursor-pointer"
+              onClick={() => setSelectedVideo(tour.video)}
+            >
               <div className="relative w-full h-96 overflow-hidden rounded-lg group">
                 <Image
                   src={tour.image || "/placeholder.svg"}
@@ -57,15 +67,41 @@ export function VirtualTours() {
                 </div>
               </div>
 
-              <button className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-100 transition-opacity">
-                <div className="bg-white/20 backdrop-blur-sm rounded-full p-6 group-hover:bg-primary/80 transition-colors">
+              <div className="absolute inset-0 flex items-center justify-center opacity-100 transition-opacity">
+                <div className="bg-white/20 backdrop-blur-sm rounded-full p-6">
                   <Play size={32} className="text-white fill-white" />
                 </div>
-              </button>
+              </div>
             </div>
           ))}
         </div>
       </div>
+
+      {selectedVideo && (
+        <div 
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 md:p-10 animate-in fade-in duration-300"
+          onClick={() => setSelectedVideo(null)}
+        >
+          <button 
+            className="absolute top-6 right-6 text-white hover:text-[#dbb45c] transition-colors"
+            onClick={() => setSelectedVideo(null)}
+          >
+            <X size={40} />
+          </button>
+          
+          <div 
+            className="relative w-full max-w-6xl aspect-video rounded-xl overflow-hidden shadow-2xl scale-in-95 animate-in zoom-in-95 duration-300"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <video 
+              src={selectedVideo} 
+              className="w-full h-full object-contain" 
+              controls 
+              autoPlay
+            />
+          </div>
+        </div>
+      )}
     </section>
   )
 }
