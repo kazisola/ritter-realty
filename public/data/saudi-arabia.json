@@ -117,18 +117,13 @@
         "stage": "Completion (Dec 2029)",
         "percentage": 10
       }
-    ],
-    "agent": {
-      "name": "DarGlobal Sales Team",
-      "phone": "+966 55 678 9032",
-      "email": "sales@darglobal.co.uk"
-    }
+    ]
   },
   {
     "id": 102,
     "slug": "trump-plaza-jeddah-executive-residences",
     "title": "Trump Plaza Jeddah – Executive Residences",
-    "location": "AMAYA, Jeddah, Kingdom of Saudi Arabia",
+    "location": "Jeddah, Kingdom of Saudi Arabia",
     "type": "Executive Residences",
     "status": "Off-Plan",
     "year_built": 2030,
@@ -188,7 +183,7 @@
       "/images/trump-plaza/DGxTrump%20Plaza_Executive%20Residences_3.jpg",
       "/images/trump-plaza/DGxTrump%20Plaza__Arrival-Dropoff.jpg"
     ],
-    "video": "/videos/Trump_Plaza_Jeddah_Executive_Residences.mp4",
+    "video": "/videos/Trump-Plaza-Jeddah.mp4",
     "brochure": "/docs/trump-plaza-jeddah-executive-residences-factsheet.pdf",
     "payment_plan": [
       {
@@ -203,11 +198,88 @@
         "stage": "Handover (Q4 2030)",
         "percentage": 20
       }
+    ]
+  },
+  {
+    "id": 103,
+    "slug": "amaya-central-jeddah-masterplan",
+    "title": "Amaya Central Jeddah Master-Planned District",
+    "location": "King Abdulaziz Road, Central Jeddah, Kingdom of Saudi Arabia",
+    "type": "Urban District",
+    "status": "Off-Plan",
+    "year_built": 2035,
+    "price": "Land & Development Plots Available (Price on Request)",
+    "beds": 0,
+    "baths": 0,
+    "sqft": 0,
+    "lot_size": "1,000,000 sqm",
+    "description": "Amaya is one of the final large-scale development opportunities in central Jeddah, spanning approximately 1,000,000 sqm of construction-ready land with flat topography and unmatched urban connectivity. Located directly on King Abdulaziz Road and enhanced by Al-Amal Avenue and the new King Abdulaziz Road Tunnel, Amaya sits at the center of Jeddah’s evolving mobility network. The masterplan is designed as a complete live-work-play ecosystem featuring residential and commercial towers, green walkable communities, and integrated amenities, positioning Amaya as a future central address in Jeddah’s urban transformation.",
+    "project_overview": {
+      "developer": "Master Developer (TBA)",
+      "ownership": "Development Plots Available (Foreign Ownership Subject to Regulations)",
+      "property_type": "Residential, Commercial, and Mixed-Use Development Plots",
+      "unit_finish": "Developer-Defined",
+      "floors": 0,
+      "anticipated_completion": "Phased Development Through 2035+",
+      "service_charges": "To Be Announced",
+      "registration_fee": "Subject to Saudi Regulations",
+      "resale_allowed": "Yes"
+    },
+    "development_zones": [
+      {
+        "type": "Residential Towers",
+        "height": "High-rise and Mid-rise",
+        "usage": "Apartments, Branded Residences, Serviced Living"
+      },
+      {
+        "type": "Commercial Towers",
+        "height": "Grade-A Office Buildings",
+        "usage": "Corporate Offices, Business Hubs"
+      },
+      {
+        "type": "Mixed-Use Plots",
+        "height": "Flexible",
+        "usage": "Retail, Hospitality, Residential, and Office Integration"
+      }
     ],
-    "agent": {
-      "name": "DarGlobal Sales Team",
-      "phone": "+966 55 678 9032",
-      "email": "sales@darglobal.co.uk"
-    }
+    "amenities": [
+      "Extensive Green Landscaping & Shaded Streets",
+      "Walkable Urban Parks & Open Spaces",
+      "Schools & Kindergarten",
+      "Clinics & Medical Facilities",
+      "Mosques",
+      "Retail & Lifestyle Zones",
+      "Integrated Mobility & Road Infrastructure",
+      "Live-Work-Play Community Planning"
+    ],
+    "investment_highlights": [
+      "One of the last major central-Jeddah land opportunities",
+      "Direct connectivity via King Abdulaziz Road and Al-Amal Avenue",
+      "New King Abdulaziz Road Tunnel improving access to Al Shatea",
+      "Strong inward investment potential near hospitals, malls, schools, and Red Sea coastline",
+      "Rising land values driven by Jeddah’s urban transformation",
+      "Strategic link between Old Jeddah and emerging urban zones"
+    ],
+    "images": [
+      "/images/amaya/Amaya_Plots_Jeddah_1.jpg",
+      "/images/amaya/Amaya_Plots_Jeddah_2.jpg",
+      "/images/amaya/Amaya_Plots_Jeddah_3.jpg"
+    ],
+    "video": "/videos/Amaya-Jeddah.mp4",
+    "brochure": "/docs/amaya-jeddah-masterplan-factsheet.pdf",
+    "payment_plan": [
+      {
+        "stage": "Land Reservation / Development Agreement",
+        "percentage": 10
+      },
+      {
+        "stage": "Phased Development Milestones",
+        "percentage": 70
+      },
+      {
+        "stage": "Completion / Handover",
+        "percentage": 20
+      }
+    ]
   }
 ]
