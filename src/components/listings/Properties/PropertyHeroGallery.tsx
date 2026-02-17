@@ -82,15 +82,15 @@ const PropertyHeroGallery = ({ images, title, video }: PropertyHeroGalleryProps)
                     <>
                         <button
                             onClick={prevItem}
-                            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all opacity-0 group-hover:opacity-100"
+                            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all sm:opacity-0 group-hover:opacity-100"
                         >
-                            <ChevronLeft size={24} className="text-foreground" />
+                            <ChevronLeft size={20} className="text-foreground" />
                         </button>
                         <button
                             onClick={nextItem}
-                            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all opacity-0 group-hover:opacity-100"
+                            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all sm:opacity-0 group-hover:opacity-100"
                         >
-                            <ChevronRight size={24} className="text-foreground" />
+                            <ChevronRight size={20} className="text-foreground" />
                         </button>
                     </>
                 )}

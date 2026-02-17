@@ -5,19 +5,19 @@ export function MarketInsights() {
     {
       title: "Southwest Florida Market Boom",
       excerpt: "The region continues to attract high-net-worth individuals seeking luxury real estate...",
-      date: "Nov 2024",
+      date: "Jan 2026",
       category: "Market Analysis",
     },
     {
-      title: "Investment Opportunities in Emerging Markets",
+      title: "Investment Opportunities KSA",
       excerpt: "Our international portfolio expansion opens doors to unprecedented growth...",
-      date: "Oct 2024",
+      date: "Dec 2025",
       category: "Investment",
     },
     {
-      title: "Luxury Real Estate Trends 2025",
+      title: "Luxury Real Estate Trends 2026",
       excerpt: "Sustainable design and smart home integration lead the charge in luxury properties...",
-      date: "Oct 2024",
+      date: "Oct 2025",
       category: "Trends",
     },
   ]
@@ -44,8 +44,8 @@ export function MarketInsights() {
               </div>
               <h3 className="text-xl font-serif font-bold text-foreground mb-3">{insight.title}</h3>
               <p className="text-gray-600 mb-6">{insight.excerpt}</p>
-              <button className="text-[#dbb45c] font-semibold text-sm cursor-pointer">
-                Read More →
+              <button className="text-primary font-semibold text-sm cursor-pointer">
+                Read More
               </button>
             </article>
           ))}

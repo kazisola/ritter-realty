@@ -33,7 +33,7 @@ export function LifestyleShowcase() {
               ))}
             </div>
 
-            <button className="mt-8 px-8 py-3 bg-[#dbb45c] text-white rounded-full font-medium hover:bg-[#e4bb5b] hover:scale-105 duration-200 transition-all">
+            <button className="mt-8 px-8 py-3 bg-primary text-white rounded-full font-medium hover:bg-[#e4bb5b] hover:scale-105 duration-200 transition-all">
               Explore Lifestyle Benefits
             </button>
           </div>
@@ -46,7 +46,7 @@ export function LifestyleShowcase() {
               width={550}
               height={550}
             />
-            <div className="absolute -bottom-8 -right-8 max-sm:-right-4 bg-[#dbb45c] text-white rounded-2xl p-6 max-sm:p-4 max-w-xs max-sm:w-72 shadow-xl">
+            <div className="absolute -bottom-8 -right-8 max-sm:-right-4 bg-primary text-white rounded-2xl p-6 max-sm:p-4 max-w-xs max-sm:w-72 shadow-xl">
               <div className="text-3xl max-sm:text-2xl font-serif font-bold mb-2">5-Star Amenities</div>
               <p>Experience luxury at every turn with world-class facilities and services</p>
             </div>

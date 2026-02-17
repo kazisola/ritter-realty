@@ -42,7 +42,7 @@ export function InvestmentOpportunities() {
                 key={index}
                 className="bg-linear-to-br from-[#dbb45c30] to-gray-100/20 rounded-2xl p-8 hover:shadow-xl transition-shadow"
               >
-                <Icon className="w-12 h-12 text-[#dbb45c] mb-6" />
+                <Icon className="w-12 h-12 text-primary mb-6" />
                 <h3 className="text-2xl font-serif font-bold text-foreground mb-3">{opp.title}</h3>
                 <p className="text-gray-700 mb-6">{opp.description}</p>
                 <ul className="space-y-3 mb-8">
@@ -53,8 +53,8 @@ export function InvestmentOpportunities() {
                     </li>
                   ))}
                 </ul>
-                <button className="text-[#dbb45c] font-semibold text-sm">
-                  Learn More →
+                <button className="text-primary font-semibold text-sm">
+                  Learn More
                 </button>
               </div>
             )

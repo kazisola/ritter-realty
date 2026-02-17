@@ -33,7 +33,14 @@ const Property = ({ property }: PropertyProps) => {
                     title: property.title.toLowerCase(),
                     location: property.location.toLowerCase()
                 }
-            } : "#"}
+            } : pathname === "/" ? {
+                pathname: `/listings/${property.location_slug}/${property.id}`,
+                query: {
+                    title: property.title.toLowerCase(),
+                    location: property.location.toLowerCase()
+                }
+            }
+            : "#"}
             className="group block bg-white rounded-2xl overflow-hidden border border-gray-50 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] cursor-pointer"
         >
 

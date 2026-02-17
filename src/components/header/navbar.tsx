@@ -11,16 +11,16 @@ const Navbar = () => {
         {
             name: "Listings",
             sub_menu: [
-                { icon: <Building size={20} />, title: "Dubai", desc: "200 properties", link: "/listings/dubai", type: "mixed" },
-                { icon: <Building size={20} />, title: "Saudi Arabia", desc: "150 properties", link: "/listings/saudi-arabia", type: "mixed" },
+                { icon: <Building size={20} />, title: "Dubai", desc: "6 properties", link: "/listings/dubai", type: "mixed" },
+                { icon: <Building size={20} />, title: "Saudi Arabia", desc: "5 properties", link: "/listings/saudi-arabia", type: "mixed" },
                 {
                     icon: <Palmtree size={20} />,
                     title: "SW Florida",
                     desc: "Properties in SW Florida",
                     isNested: true,
                     children: [
-                        { icon: <House size={18} />, title: "Residential", desc: "120 properties", link: "/listings/florida", type: "residential" },
-                        { icon: <Building size={18} />, title: "Commercial", desc: "100 properties", link: "/listings/florida", type: "commercial" },
+                        { icon: <House size={18} />, title: "Residential", desc: "15 properties", link: "/listings/florida", type: "residential" },
+                        { icon: <Building size={18} />, title: "Commercial", desc: "5 properties", link: "/listings/florida", type: "commercial" },
                     ]
                 },
                 {
@@ -81,7 +81,7 @@ const Navbar = () => {
                 {navs.map((nav, index) => (
                     <li
                         key={index}
-                        className={`relative font-medium ${pathname === nav.link ? "text-[#dbb45c]" : "text-gray-800"} hover:text-[#946f19] duration-200`}
+                        className={`relative font-medium ${pathname === nav.link ? "text-primary" : "text-gray-800"} hover:text-[#946f19] duration-200`}
                     >
                         {nav.link ? (
                             <Link href={nav.link}>{nav.name}</Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
                                                 className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 cursor-pointer transition-all"
                                             >
                                                 <div className="flex items-center gap-3">
-                                                    <span className="text-[#dbb45c]">{item.icon}</span>
+                                                    <span className="text-primary">{item.icon}</span>
                                                     <div>
                                                         <p className="font-semibold text-sm text-gray-900">{item.title}</p>
                                                         <p className="text-[10px] text-gray-500">{item.desc}</p>
@@ -123,9 +123,9 @@ const Navbar = () => {
                                                             <li key={cIdx}>
                                                                 <Link
                                                                     href={{ pathname: child.link, query: { type: child.type } }}
-                                                                    className="p-2 text-sm text-gray-700 hover:text-[#dbb45c] hover:bg-gray-50 rounded-md flex items-center gap-2"
+                                                                    className="p-2 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md flex items-center gap-2"
                                                                 >
-                                                                    <span className="text-[#dbb45c]">{child.icon}</span>
+                                                                    <span className="text-primary">{child.icon}</span>
                                                                     {child.title}
                                                                 </Link>
                                                             </li>
@@ -138,7 +138,7 @@ const Navbar = () => {
                                                 href={{ pathname: item.link, query: { type: item.type } }}
                                                 className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-all"
                                             >
-                                                <span className="text-[#dbb45c]">{item.icon}</span>
+                                                <span className="text-primary">{item.icon}</span>
                                                 <div>
                                                     <p className="font-semibold text-sm text-gray-900">{item.title}</p>
                                                     <p className="text-[10px] text-gray-600">{item.desc}</p>
@@ -154,15 +154,15 @@ const Navbar = () => {
             </ul>
 
             {/* Mobile Nav Button */}
-            <button onClick={() => setShowResponsiveNav(true)} className="text-[#dbb45c] md:hidden relative top-1">
+            <button onClick={() => setShowResponsiveNav(true)} className="text-primary md:hidden relative top-1">
                 <Menu size={26} />
             </button>
 
             {/* Mobile Menu Content */}
             {showResponsiveNav && (
-                <div className="fixed top-0 left-0 w-full h-screen flex flex-col bg-white z-50 px-6 py-4 overflow-y-auto">
+                <div className="fixed top-0 left-0 w-full h-screen flex flex-col bg-white z-50 px-6 py-5 overflow-y-auto">
                     <div className="flex items-center justify-between mb-5 pb-5 border-b border-gray-100">
-                        <Link href="/" className='font-extrabold text-xl max-sm:text-xl text-[#e2b864] flex items-center gap-3'>
+                        <Link href="/" className='font-extrabold text-xl max-sm:text-xl text-[#bc9a4b] flex items-center gap-3'>
                             <Image src={"/images/icononly_transparent_nobuffer.png"} alt={"Ritter Realty Logo"} width={100} height={100} className='w-14 max-sm:w-11 h-auto' />
                             Ritter Realty
                         </Link>
@@ -173,7 +173,7 @@ const Navbar = () => {
                         {navs.map((nav, index) => (
                             <li key={index}>
                                 {nav.link ? (
-                                    <Link href={nav.link} onClick={() => setShowResponsiveNav(false)} className={`block py-2 ${pathname === nav.link ? "text-[#dbb45c]" : "text-gray-800"}`}>
+                                    <Link href={nav.link} onClick={() => setShowResponsiveNav(false)} className={`block py-2 ${pathname === nav.link ? "text-primary" : "text-gray-800"}`}>
                                         {nav.name}
                                     </Link>
                                 ) : (
@@ -196,7 +196,7 @@ const Navbar = () => {
                                                                     <div className="ml-8 flex flex-col gap-2 bg-gray-50 p-3 rounded-md">
                                                                         {item.children?.map((child, cIdx) => (
                                                                             <Link key={cIdx} href={{ pathname: child.link, query: { type: child.type } }} onClick={() => setShowResponsiveNav(false)} className="text-sm text-gray-600 py-1 flex items-center gap-2">
-                                                                                <span className="text-[#dbb45c]">{child.icon}</span>
+                                                                                <span className="text-primary">{child.icon}</span>
                                                                                 {child.title}
                                                                             </Link>
                                                                         ))}
@@ -221,7 +221,7 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <button onClick={() => router.push("/contact")} className='mt-auto bg-[#dbb45c] text-white font-semibold h-12 rounded-full'>Schedule Meet</button>
+                    <button onClick={() => router.push("/contact")} className='mt-auto bg-primary text-white font-semibold h-12 rounded-full'>Schedule Meet</button>
                 </div>
             )}
         </nav>

@@ -31,10 +31,10 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Laurie & Chris",
-    title: "Home Buyers",
+    name: "Tannie & Tim Girard",
+    title: "Sellers & Buyers",
     content:
-      "Loyal respected that we weren't quite ready but still took the time to guide us — and ultimately helped us find our dream home. If you want an honest, down-to-earth realtor, look no further.",
+      "He truly cares about people and has very high ethics. We feel fortunate to have had his expertise in real estate and would send family and friends to Loyal with complete confidence.",
     rating: 5,
   },
 ];
@@ -71,11 +71,11 @@ export function TestimonialSection() {
             <div className="relative bg-white p-8 rounded-2xl border border-gray-50 h-full flex flex-col justify-between">
               <QuoteIcon
                 size={60}
-                className="absolute bottom-5 right-5 text-yellow-100 opacity-40"
+                className="absolute bottom-5 right-5 text-yellow-600 opacity-10"
               />
               <div className="mb-4 flex gap-1">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} size={20} className="text-yellow-500" />
+                  <Star key={i} size={20} className="text-yellow-600 fill-yellow-600" />
                 ))}
               </div>
               <p className="text-gray-700 italic mb-6">{testimonial.content}</p>

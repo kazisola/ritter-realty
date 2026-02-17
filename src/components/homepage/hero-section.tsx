@@ -49,12 +49,12 @@ export function HeroSection() {
               className="space-y-8"
             >
               <div className="space-y-4">
-                <span className="inline-block text-[10px] uppercase tracking-[0.3em] text-[#9A8452] font-bold">
+                <span className="inline-block text-[10px] uppercase tracking-[0.3em] text-primary font-bold">
                   Welcome to Ritter Realty
                 </span>
-                <h1 className="text-5xl md:text-7xl font-serif text-[#1A1A1A] leading-[1.1] tracking-tight">
+                <h1 className="text-5xl md:text-7xl font-serif leading-[1.1] tracking-tight">
                   Refined Living, <br />
-                  <span className="italic text-[#9A8452]">Redefined.</span>
+                  <span className="italic text-primary">Redefined.</span>
                 </h1>
                 <p className="text-base text-gray-600 max-w-md leading-relaxed font-light">
                   Experience extraordinary properties across Southwest Florida and exclusive international markets. We specialize in connecting discerning clients with their dream estates
@@ -64,19 +64,13 @@ export function HeroSection() {
               <div className="flex flex-wrap gap-5">
                 <button 
                   onClick={() => router.push("/listings/hurricane-proof?type=residential")}
-                  className="group relative px-8 py-4 bg-[#1A1A1A] text-white overflow-hidden transition-all cursor-pointer rounded-full"
+                  className="group relative px-8 py-4 bg-black text-white overflow-hidden transition-all cursor-pointer rounded-full"
                 >
                   <span className="relative z-10 flex items-center gap-3 text-sm font-medium tracking-wide">
                     VIEW PORTFOLIO <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                   </span>
                 </button>
                 
-                <button 
-                  onClick={() => router.push("/about")}
-                  className="px-8 py-4 border border-gray-200 text-[#1A1A1A] hover:bg-white hover:shadow-xl transition-all text-sm font-medium tracking-wide flex items-center gap-3 cursor-pointer rounded-full"
-                >
-                  OUR STORY
-                </button>
               </div>
 
               {/* Counter Section */}
@@ -155,7 +149,7 @@ export function HeroSection() {
 
               {/* Video/Play Button Accent */}
               <motion.div 
-                className="col-span-2 row-span-1 bg-[#9A8452] flex items-center justify-center cursor-pointer group"
+                className="col-span-2 row-span-1 bg-primary flex items-center justify-center cursor-pointer group"
                 whileHover={{ backgroundColor: "#867347" }}
               >
                 <div className="flex items-center gap-3 text-white">
@@ -167,7 +161,7 @@ export function HeroSection() {
 
             {/* Floating Decorative Label */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-lg max-w-[200px] hidden md:block">
-              <p className="text-[10px] text-[#9A8452] font-bold uppercase tracking-tighter mb-1">Featured Estate</p>
+              <p className="text-[10px] text-primary font-bold uppercase tracking-tighter mb-1">Featured Estate</p>
               <p className="text-sm font-serif text-[#1A1A1A] italic">Trump Tower, KSA</p>
             </div>
           </div>

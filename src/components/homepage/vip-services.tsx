@@ -38,7 +38,7 @@ export function VIPServices() {
             return (
               <div key={index} className="text-center">
                 <div className="bg-linear-to-br from-[#dbb45c30] to-[#efc35d49] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                  <Icon className="w-8 h-8 text-[#dbb45c]" />
+                  <Icon className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-serif font-bold text-foreground mb-3">{service.title}</h3>
                 <p className="text-sm text-gray-600">{service.description}</p>
@@ -51,7 +51,7 @@ export function VIPServices() {
           <p className="text-lg text-gray-700 mb-6">
             Ready to experience luxury real estate at the highest level?
           </p>
-          <button className="cursor-pointer px-8 py-3 bg-[#dbb45c] text-white rounded-full font-semibold text-sm hover:bg-[#e1b858] hover:scale-105 duration-200 transition-all">
+          <button className="cursor-pointer px-8 py-3 bg-primary text-white rounded-full font-semibold text-sm hover:bg-[#e1b858] hover:scale-105 duration-200 transition-all">
             Schedule Private Consultation
           </button>
         </div>

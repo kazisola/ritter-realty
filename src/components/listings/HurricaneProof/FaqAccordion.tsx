@@ -19,7 +19,7 @@ const faqData = [
             <span className="text-xs md:text-sm font-medium text-slate-700">Most homes completed in around 9 months.</span>
           </div>
           <div className="p-4 bg-slate-50 rounded-xl border-l-2 border-[#dbb45c]">
-            <span className="block font-bold text-[10px] uppercase tracking-wider mb-1 text-[#dbb45c]">Foundations</span>
+            <span className="block font-bold text-[10px] uppercase tracking-wider mb-1 text-primary">Foundations</span>
             <span className="text-xs md:text-sm font-medium text-slate-700">Fiberglass pilings for harsh coastal areas.</span>
           </div>
         </div>
@@ -34,10 +34,10 @@ const faqData = [
         <p className="text-sm md:text-base">Structural Concrete Insulated Panels (SCIP) consist of a steel-reinforced foam core encased in high-strength concrete layers.</p>
         
         <div className="grid grid-cols-1 xs:grid-cols-2 gap-y-2 gap-x-4 text-xs md:text-sm">
-          <div className="flex items-center gap-2 font-medium"><div className="w-1.5 h-1.5 rounded-full bg-[#dbb45c]" /> Wind-rated 200 mph+</div>
-          <div className="flex items-center gap-2 font-medium"><div className="w-1.5 h-1.5 rounded-full bg-[#dbb45c]" /> Impact-resistant</div>
-          <div className="flex items-center gap-2 font-medium"><div className="w-1.5 h-1.5 rounded-full bg-[#dbb45c]" /> Fire-resistant</div>
-          <div className="flex items-center gap-2 font-medium"><div className="w-1.5 h-1.5 rounded-full bg-[#dbb45c]" /> Flood-resistant</div>
+          <div className="flex items-center gap-2 font-medium"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Wind-rated 200 mph+</div>
+          <div className="flex items-center gap-2 font-medium"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Impact-resistant</div>
+          <div className="flex items-center gap-2 font-medium"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Fire-resistant</div>
+          <div className="flex items-center gap-2 font-medium"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Flood-resistant</div>
         </div>
       </div>
     )
@@ -56,7 +56,7 @@ const faqData = [
           ].map((item, i) => (
             <div key={i} className="py-3 flex justify-between items-center">
               <span className="text-xs md:text-sm font-medium text-slate-600">{item.label}</span>
-              <span className="text-xs md:text-sm text-[#dbb45c] font-bold">{item.val}</span>
+              <span className="text-xs md:text-sm text-primary font-bold">{item.val}</span>
             </div>
           ))}
         </div>
@@ -86,7 +86,7 @@ const FaqAccordion = () => {
         <motion.h2 
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-[#dbb45c] font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-3"
+          className="text-primary font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-3"
         >
           Specifications
         </motion.h2>
@@ -96,7 +96,7 @@ const FaqAccordion = () => {
           transition={{ delay: 0.1 }}
           className="text-3xl md:text-5xl font-light text-slate-900 tracking-tight"
         >
-          Expert <span className="font-serif italic text-[#dbb45c]">Q&A</span>
+          Expert <span className="font-serif italic text-primary">Q&A</span>
         </motion.h3>
       </div>
 
@@ -135,7 +135,7 @@ const FaqAccordion = () => {
                 </div>
                 
                 <div className={`shrink-0 ml-2 transition-all duration-300 p-1 rounded-full ${
-                  isOpen ? 'bg-[#dbb45c]/10 text-[#dbb45c] rotate-180' : 'bg-slate-50 text-slate-300 group-hover:bg-slate-100 group-hover:text-slate-400'
+                  isOpen ? 'bg-[#dbb45c]/10 text-primary rotate-180' : 'bg-slate-50 text-slate-300 group-hover:bg-slate-100 group-hover:text-slate-400'
                 }`}>
                   {isOpen ? <Minus size={18} /> : <Plus size={18} />}
                 </div>

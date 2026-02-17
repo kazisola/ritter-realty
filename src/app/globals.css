@@ -5,7 +5,7 @@
 :root {
   --background: #FDF7F1;
   --foreground: #171717;
-  --primary-color: #dbb45c;
+  --primary-color: #9A8452;
   --secondary-color: #00786F;
 }
 
@@ -24,7 +24,12 @@
   }
 }
 */
-
+.bg-primary {
+  background: var(--primary-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
 body {
   background: var(--background);
   color: var(--foreground);

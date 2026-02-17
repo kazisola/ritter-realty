@@ -69,7 +69,7 @@ export function ExpertiseSection() {
 
         {/* Unique value proposition */}
         <div className="mt-16 bg-linear-to-r from-teal-700/20 to-secondary/20 rounded-2xl p-12 border border-teal-700/30">
-          <h3 className="text-3xl font-serif font-bold text-foreground mb-6">The Loyal Ritter Difference</h3>
+          <h3 className="text-3xl font-serif font-bold text-slate-800 mb-6">The Loyal Ritter Difference</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h4 className="text-lg font-semibold text-teal-700 mb-2">Listener First</h4>

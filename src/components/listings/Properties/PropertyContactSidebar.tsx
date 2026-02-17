@@ -18,7 +18,7 @@ const PropertyContactSidebar = ({ property }: PropertyContactSidebarProps) => {
         <div className="bg-gradient-to-r from-orange-700/20 to-cyan-600/20 h-24" />
         <div className="px-6 pb-6">
           <div className="flex items-center gap-4 -mt-8 mb-4">
-            <div className="w-16 h-16 bg-[#dbb45c] rounded-full border-4 border-white flex items-center justify-center text-xl font-bold text-white">
+            <div className="w-16 h-16 bg-primary rounded-full border-4 border-white flex items-center justify-center text-xl font-bold text-white">
               LR
             </div>
           </div>
@@ -30,14 +30,14 @@ const PropertyContactSidebar = ({ property }: PropertyContactSidebarProps) => {
           </div>
           <a
             href="tel:9418303618"
-            className="flex items-center gap-2 text-[#dbb45c] hover:text-[#d3a844] font-semibold text-sm mb-2"
+            className="flex items-center gap-2 text-primary hover:text-[#d3a844] font-semibold text-sm mb-2"
           >
             <Phone size={16} />
-            941–830–3618
+            1 (941) 830-3618
           </a>
           <a
             href="mailto:loyal@ritterrealtyllc.com"
-            className="flex items-center gap-2 text-[#dbb45c] hover:text-[#d3a844] font-semibold text-sm"
+            className="flex items-center gap-2 text-primary hover:text-[#d3a844] font-semibold text-sm"
           >
             <Mail size={16} />
             loyal@ritterrealtyllc.com
@@ -47,13 +47,13 @@ const PropertyContactSidebar = ({ property }: PropertyContactSidebarProps) => {
 
       {/* Action Buttons */}
       <div className="space-y-2">
-        <button className="w-full bg-[#dbb45c] text-white py-3 rounded-lg font-semibold hover:bg-[#d3a844] transition-colors cursor-pointer">
+        <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-[#d3a844] transition-colors cursor-pointer">
           Request More Info
         </button>
-        <button className="w-full bg-[#dbb55c8b] text-foreground py-3 rounded-lg font-semibold hover:bg-[#dbb55cb5] transition-colors flex items-center justify-center gap-2 cursor-pointer">
+        {/* <button className="w-full bg-[#dbb55c8b] text-foreground py-3 rounded-lg font-semibold hover:bg-[#dbb55cb5] transition-colors flex items-center justify-center gap-2 cursor-pointer">
           <Video size={18} />
           Schedule Tour
-        </button>
+        </button> */}
       </div>
 
       {/* Quick Actions */}
@@ -95,7 +95,7 @@ const PropertyContactSidebar = ({ property }: PropertyContactSidebarProps) => {
           />
           <button
             type="submit"
-            className="w-full bg-[#dbb45c] text-white py-3 rounded-lg font-semibold hover:bg-[#d5a83f] transition-colors text-sm cursor-pointer"
+            className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-[#674b08] transition-colors text-sm cursor-pointer"
           >
             Send Inquiry
           </button>

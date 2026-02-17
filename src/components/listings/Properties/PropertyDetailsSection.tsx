@@ -20,20 +20,20 @@ const PropertyDetailsSection = ({ property }: PropertyDetailsSectionProps) => {
   return (
     <div className="space-y-16">
       <div className="relative">
-        <div className="flex items-center gap-2 text-[#00786F] mb-3">
+        <div className="flex items-center gap-2 text-primary mb-3">
           <MapPin size={18} strokeWidth={2.5} />
           <span className="font-semibold tracking-wide">{property.location}</span>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl font-light text-slate-900 tracking-tight mb-6">
+        <h1 className="text-5xl max-sm:text-3xl font-semibold text-slate-900 tracking-tight mb-6">
           {property.title}
         </h1>
 
-        <div className="text-4xl sm:text-5xl font-light text-slate-900">
+        <div className="text-4xl max-sm:text-2xl font-light text-slate-900">
           {formatPriceText(property.price)}
         </div>
 
-        <div className="mt-6 h-px bg-gradient-to-r from-[#00786F] via-slate-300 to-transparent max-w-md" />
+        <div className="mt-6 h-px bg-gradient-to-r from-[#9A8452] via-slate-300 to-transparent max-w-md" />
       </div>
 
       {/* QUICK STATS */}
@@ -60,7 +60,7 @@ const PropertyDetailsSection = ({ property }: PropertyDetailsSectionProps) => {
 
       <div>
         <div className="flex items-center gap-4 mb-6">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#00786F] to-transparent max-w-xs" />
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#9A8452] to-transparent max-w-xs" />
         </div>
         <h2 className="text-4xl font-light text-slate-900 tracking-tight mb-6">
           About This {isProject ? "Project" : "Property"}
@@ -74,7 +74,7 @@ const PropertyDetailsSection = ({ property }: PropertyDetailsSectionProps) => {
       {isProject && property.project_overview && (
         <div>
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#00786F] to-transparent max-w-xs" />
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#9A8452] to-transparent max-w-xs" />
           </div>
           <h2 className="text-4xl font-light text-slate-900 tracking-tight mb-8">
             Project Overview
@@ -104,7 +104,7 @@ const PropertyDetailsSection = ({ property }: PropertyDetailsSectionProps) => {
       {isProject && property.unit_types?.length > 0 && (
         <div>
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#00786F] to-transparent max-w-xs" />
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#9A8452] to-transparent max-w-xs" />
           </div>
           <h2 className="text-4xl font-light text-slate-900 tracking-tight mb-8">
             Available Unit Types
@@ -144,7 +144,7 @@ const PropertyDetailsSection = ({ property }: PropertyDetailsSectionProps) => {
       {isProject && property.payment_plan?.length > 0 && (
         <div>
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#00786F] to-transparent max-w-xs" />
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#9A8452] to-transparent max-w-xs" />
           </div>
           <h2 className="text-4xl font-light text-slate-900 tracking-tight mb-8">
             Payment Plan
@@ -154,12 +154,12 @@ const PropertyDetailsSection = ({ property }: PropertyDetailsSectionProps) => {
             {property.payment_plan.map((step, i) => (
               <div
                 key={i}
-                className="group pb-6 border-b border-slate-200 hover:border-[#00786F] transition-all"
+                className="group pb-6 border-b border-slate-200 hover:border-[#9A8452] transition-all"
               >
                 <div className="text-sm text-slate-600 mb-2 font-light uppercase tracking-wider">
                   {step.stage}
                 </div>
-                <div className="text-4xl font-light text-slate-900 group-hover:text-[#00786F] transition-colors">
+                <div className="text-4xl font-light text-slate-900 group-hover:text-[#9A8452] transition-colors">
                   {step.percentage}%
                 </div>
               </div>
@@ -175,10 +175,10 @@ const PropertyDetailsSection = ({ property }: PropertyDetailsSectionProps) => {
 const MinimalStat = ({ title, value }: { title: string; value?: string | number }) => (
   <div className="group">
     <div className="text-sm text-slate-600 mb-2 font-light uppercase tracking-wider">{title}</div>
-    <div className="text-3xl font-light text-slate-900 group-hover:text-[#00786F] transition-colors">
+    <div className="text-3xl font-light text-slate-900 group-hover:text-[#9A8452] transition-colors">
       {value ?? "—"}
     </div>
-    <div className="mt-3 h-px w-12 bg-slate-300 group-hover:w-full group-hover:bg-[#00786F] transition-all duration-500" />
+    <div className="mt-3 h-px w-12 bg-slate-300 group-hover:w-full group-hover:bg-[#9A8452] transition-all duration-500" />
   </div>
 )
 
@@ -191,9 +191,9 @@ const MinimalInfoItem = ({
   label: string
   value?: string
 }) => (
-  <div className="group pb-6 border-b border-slate-200 hover:border-[#00786F] transition-all">
+  <div className="group pb-6 border-b border-gray-200 hover:border-[#9A8452] transition-all">
     <div className="flex gap-4 items-start">
-      <div className="text-[#00786F] mt-1 group-hover:scale-110 transition-transform">{icon}</div>
+      <div className="text-[#9A8452] mt-1 group-hover:scale-110 transition-transform">{icon}</div>
       <div className="flex-1">
         <div className="text-sm text-slate-600 mb-1 font-light uppercase tracking-wider">{label}</div>
         <div className="font-medium text-slate-900 text-lg">{value}</div>
