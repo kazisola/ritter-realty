@@ -381,5 +381,213 @@
         "payable": "After Handover"
       }
     ]
+  },
+  {
+    "id": 105,
+    "slug": "rayana-mansion-1k-riyadh",
+    "title": "Rayana Mansion 1K - Luxury Villas",
+    "location": "Riyadh, Kingdom of Saudi Arabia",
+    "location_slug": "saudi-arabia",
+    "type": "Luxury Mansions",
+    "status": "Off-Plan",
+    "year_built": 2028,
+    "price": "Starting from SAR 2,500,000",
+    "beds": 5,
+    "baths": 6,
+    "sqft": 0,
+    "lot_size": "Private Mansion Community",
+    "description": "Rayana Mansion 1K is a premium luxury villa offering expansive living spaces, private gardens, smart home technology, and elite architectural design in Riyadh. Designed for international investors and high-net-worth buyers seeking exclusive Saudi real estate opportunities.",
+    "project_overview": {
+      "developer": "Rayana Developments",
+      "ownership": "Foreign Ownership Subject to Saudi Regulations",
+      "property_type": "Luxury Villas",
+      "unit_finish": "High-End Luxury Finishes",
+      "floors": 2,
+      "anticipated_completion": "2028",
+      "service_charges": "To Be Announced",
+      "registration_fee": "5% (Estimated on Completion)",
+      "resale_allowed": "Yes"
+    },
+    "unit_types": [
+      {
+        "type": "5-Bedroom Luxury Mansion",
+        "size_range": "Developer Defined",
+        "starting_price": "From SAR 2,500,000",
+        "parking": "Private Garage"
+      }
+    ],
+    "amenities": [
+      "Private Swimming Pool",
+      "Smart Home Automation",
+      "Landscaped Gardens",
+      "Private Parking",
+      "24/7 Security",
+      "Maid Room & Storage",
+      "Luxury Interior Finishes"
+    ],
+    "images": [
+      "/images/rayana/mansion-1k/villa2B-View01A-2.jpg",
+      "/images/rayana/mansion-1k/Villa2%20Branded%20-V4.jpg",
+      "/images/rayana/mansion-1k/Villa2%20Branded%20-V1-B.jpg",
+      "/images/rayana/mansion-1k/Villa1%20Branded-V2.jpg",
+      "/images/rayana/mansion-1k/villa2B-View04-2.jpg",
+      "/images/rayana/mansion-1k/06.%20Villa%20Type%2001_Formal%20Dining.jpg",
+      "/images/rayana/mansion-1k/04.%20Villa%20Type%2001_Dining%20and%20show%20kitchen_Rev02_4K.jpg",
+      "/images/rayana/mansion-1k/08.%20Villa%20Type%2001_Master's%20Bedroom.jpg",
+      "/images/rayana/mansion-1k/09.%20Villa%20Type%2001_Master's%20Bathroom_Opt%201.jpg"
+    ],
+    "video": "",
+    "brochure": "",
+    "payment_plan": [
+      {
+        "stage": "Booking",
+        "percentage": 20
+      },
+      {
+        "stage": "Construction Installments",
+        "percentage": 70
+      },
+      {
+        "stage": "Handover",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "slug": "rayana-mansion-2k-riyadh",
+    "title": "Rayana Mansion 2K - Ultra Luxury Mansions",
+    "location": "Riyadh, Kingdom of Saudi Arabia",
+    "location_slug": "saudi-arabia",
+    "type": "Luxury Mansions",
+    "status": "Off-Plan",
+    "year_built": 2028,
+    "price": "Starting from SAR 4,200,000",
+    "beds": 6,
+    "baths": 7,
+    "sqft": 0,
+    "lot_size": "Exclusive Private Estates",
+    "description": "Rayana Mansion 2K features ultra-luxury estates with expansive layouts, premium architectural design, and elite lifestyle amenities. Ideal for global investors seeking high-value Saudi real estate assets.",
+    "project_overview": {
+      "developer": "Rayana Developments",
+      "ownership": "Foreign Ownership Subject to Saudi Regulations",
+      "property_type": "Ultra Luxury Villas",
+      "unit_finish": "Premium Luxury Finishes",
+      "floors": 2,
+      "anticipated_completion": "2028",
+      "service_charges": "To Be Announced",
+      "registration_fee": "5% (Estimated on Completion)",
+      "resale_allowed": "Yes"
+    },
+    "unit_types": [
+      {
+        "type": "6-Bedroom Ultra Luxury Mansion",
+        "size_range": "Developer Defined",
+        "starting_price": "From SAR 4,200,000",
+        "parking": "Private Garage"
+      }
+    ],
+    "amenities": [
+      "Private Pool",
+      "Home Cinema Room",
+      "Smart Home System",
+      "Private Gym",
+      "Luxury Landscaping",
+      "24/7 Security",
+      "Premium Interiors"
+    ],
+    "images": [
+      "/images/rayana/mansion-2k/NNNNNN-VXS-DES-BLD-ARC-GEN-REN-004-JPG-000-1.jpg",
+      "/images/rayana/mansion-2k/NNNNNN-VXS-DES-BLD-ARC-GEN-REN-007-JPG-000.jpg",
+      "/images/rayana/mansion-2k/NNNNNN-VXS-DES-BLD-ARC-GEN-REN-002-JPG-000.png",
+      "/images/rayana/mansion-2k/NNNNNN-VXS-DES-BLD-INT-GEN-REN-00012-JPG-000.png",
+      "/images/rayana/mansion-2k/NNNNNN-VXS-DES-BLD-INT-GEN-REN-00010-JPG-000.png",
+      "/images/rayana/mansion-2k/NNNNNN-VXS-DES-BLD-INT-GEN-REN-00001-JPG-000.png"
+    ],
+    "video": "",
+    "brochure": "",
+    "payment_plan": [
+      {
+        "stage": "Booking",
+        "percentage": 20
+      },
+      {
+        "stage": "Construction Installments",
+        "percentage": 70
+      },
+      {
+        "stage": "Handover",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "slug": "rayana-mansion-5k-riyadh",
+    "title": "Rayana Mansion 5K - Signature Estates",
+    "location": "Riyadh, Kingdom of Saudi Arabia",
+    "location_slug": "saudi-arabia",
+    "type": "Luxury Mansinos",
+    "status": "Off-Plan",
+    "year_built": 2028,
+    "price": "Starting from SAR 8,500,000",
+    "beds": 7,
+    "baths": 9,
+    "sqft": 0,
+    "lot_size": "Elite Private Estate Plots",
+    "description": "Rayana Mansion 5K represents the pinnacle of luxury living in Riyadh, offering grand estates with elite architecture, private spa facilities, cinema rooms, and expansive landscaped grounds. Designed for ultra-high-net-worth buyers and global investors.",
+    "project_overview": {
+      "developer": "Rayana Developments",
+      "ownership": "Foreign Ownership Subject to Saudi Regulations",
+      "property_type": "Signature Luxury Estates",
+      "unit_finish": "Ultra Premium Luxury Finishes",
+      "floors": 2,
+      "anticipated_completion": "2028",
+      "service_charges": "To Be Announced",
+      "registration_fee": "5% (Estimated on Completion)",
+      "resale_allowed": "Yes"
+    },
+    "unit_types": [
+      {
+        "type": "7-Bedroom Signature Estate",
+        "size_range": "Developer Defined",
+        "starting_price": "From SAR 8,500,000",
+        "parking": "Private Garage"
+      }
+    ],
+    "amenities": [
+      "Private Spa & Sauna",
+      "Cinema Room",
+      "Private Gym",
+      "Infinity Pool",
+      "Luxury Gardens",
+      "Smart Home Automation",
+      "24/7 Security & Concierge"
+    ],
+    "images": [
+      "/images/rayana/mansion-5k/NNNNNN-VXS-DES-BLD-ARC-GEN-REN-002-JPG-000.jpg",
+      "/images/rayana/mansion-5k/NNNNNN-VXS-DES-BLD-ARC-GEN-REN-004-JPG-000.jpg",
+      "/images/rayana/mansion-5k/NNNNNN-VXS-DES-BLD-ARC-GEN-REN-004-JPG-000.png",
+      "/images/rayana/mansion-5k/NNNNNN-VXS-DES-BLD-ARC-GEN-REN-006-JPG-000%20(1).png",
+      "/images/rayana/mansion-5k/NNNNNN-VXS-DES-BLD-INT-GEN-REN-00008-JPG-000.png",
+      "/images/rayana/mansion-5k/NNNNNN-VXS-DES-BLD-INT-GEN-REN-00006-JPG-000.png",
+      "/images/rayana/mansion-5k/NNNNNN-VXS-DES-BLD-INT-GEN-REN-00005-JPG-000%20d.png"
+    ],
+    "video": "",
+    "brochure": "",
+    "payment_plan": [
+      {
+        "stage": "Booking",
+        "percentage": 20
+      },
+      {
+        "stage": "Construction Installments",
+        "percentage": 70
+      },
+      {
+        "stage": "Handover",
+        "percentage": 10
+      }
+    ]
   }
 ]
