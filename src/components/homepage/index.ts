@@ -6,4 +6,3 @@ export { VirtualTours } from "./virtual-tours";
 export { LifestyleShowcase } from "./lifestyle-showcase";
 export { TestimonialSection } from "./testimonial-section";
 export { VIPServices } from "./vip-services";
-export { AgentSpotlight } from "./agent-spotlight";

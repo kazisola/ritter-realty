@@ -7,9 +7,9 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 
 const images = [
-  { src: "/images/luxury-residential-house.jpg", alt: "Modern Estate" },
-  { src: "/images/commercial-office-building-luxury.jpg", alt: "Premium Office" },
-  { src: "/images/beachfront-luxury-villa-sunset.jpg", alt: "Coastal Villa" },
+  { src: "/images/trump/TTJ_1.jpg", alt: "Luxury Tower" },
+  { src: "/images/trump-plaza/DGxTrump Plaza_Front-Entrance.jpg", alt: "Luxury Plaza" },
+  { src: "/images/neptune/5.jpg", alt: "Modern City" },
 ]
 
 export function HeroSection() {
