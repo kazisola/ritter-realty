@@ -22,7 +22,6 @@ export function FeaturedListings() {
 
         if (hurricaneProps.status === 200 && saudiProps.status === 200) {
           setFeaturedProperties([
-            ...hurricaneProps.data,
             ...saudiProps.data,
           ]);
         }

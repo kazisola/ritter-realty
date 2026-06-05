@@ -23,17 +23,17 @@ const Navbar = () => {
                         { icon: <Building size={18} />, title: "Commercial", desc: "5 properties", link: "/listings/florida", type: "commercial" },
                     ]
                 },
-                {
-                    icon: <ShieldCheck size={20} />,
-                    title: "Hurricane Proof",
-                    desc: "Resilient Architecture",
-                    isNested: true,
-                    children: [
-                        { icon: <House size={18} />, title: "Residential", link: "/listings/hurricane-proof", type: "residential" },
-                        { icon: <Building size={18} />, title: "Commercial", link: "/listings/hurricane-proof", type: "commercial" },
-                        { icon: <BookCheck size={18} />, title: "Construction Specs", link: "/listings/hurricane-proof-specs", type: null }
-                    ]
-                }
+                // {
+                //     icon: <ShieldCheck size={20} />,
+                //     title: "Hurricane Proof",
+                //     desc: "Resilient Architecture",
+                //     isNested: true,
+                //     children: [
+                //         { icon: <House size={18} />, title: "Residential", link: "/listings/hurricane-proof", type: "residential" },
+                //         { icon: <Building size={18} />, title: "Commercial", link: "/listings/hurricane-proof", type: "commercial" },
+                //         { icon: <BookCheck size={18} />, title: "Construction Specs", link: "/listings/hurricane-proof-specs", type: null }
+                //     ]
+                // }
             ],
         },
         { name: "About", link: "/about" },

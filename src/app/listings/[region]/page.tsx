@@ -32,7 +32,7 @@ const regionMeta = {
   "saudi-arabia": {
     title: "Saudi Arabia Exclusive Properties",
     desc: "Explore the finest luxury homes and commercial investments across Riyadh, Jeddah, and the Kingdom's most sought-after cities.",
-    background: "/images/waterfront-modern-estate-luxury-home.jpg",
+    background: "/images/saudi/rayana-5k/C1/NNNNNN-VXS-DES-BLD-ARC-GEN-REN-002-JPG-000.jpg",
   },
 };
 

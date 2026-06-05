@@ -18,10 +18,10 @@ export function OurPartnersSection() {
                 </div>
 
                 {/* Cards */}
-                <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-12 md:grid-cols-2">
 
                     {/* BeachLife Development */}
-                    <div className="rounded-2xl bg-white p-10 border border-neutral-200 shadow-sm hover:shadow-md transition">
+                    {/* <div className="rounded-2xl bg-white p-10 border border-neutral-200 shadow-sm hover:shadow-md transition">
                         <div className="relative w-24 h-24 mb-6">
                             <Image
                                 src="/images/beachlife.jpeg"
@@ -39,7 +39,7 @@ export function OurPartnersSection() {
                             A respected name in premium property development, delivering high–standard residential
                             and commercial projects across international markets.
                         </p>
-                    </div>
+                    </div> */}
 
                     {/* GO Real Estate */}
                     <div className="rounded-2xl bg-white p-10 border border-neutral-200 shadow-sm hover:shadow-md transition">
